@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html><head>
+<title>An Tao's Homepage</title>
+<link rel="icon" href="image/icon.jpg" >
+
+<script type="text/javascript">
+      //判断是否手机访问 如果是跳转 
+      try {
+      var urlhash = window.location.hash;
+      if (!urlhash.match("fromapp")) {
+      if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {
+      window.location = "/mobile.html";
+      }
+      }
+      } catch (err) {}
+</script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+<style type="text/css">
+
+body
+{
+ 	font-family: 'Lucida Grande',Arial,Helvetica,'STXihei',sans-serif; 
+    background-color : #fff;
+    font-size: 18px;
+    width : 1440px;
+}
+    .content
+	{
+    		width : 1100px;
+    		padding : 25px 30px;
+    		margin : 25px auto;
+    		margin-left: 260px;
+/*     		background-color : #fff;
+    		box-shadow: 0px 0px 10px #999; */
+/*     		border-radius: 15px;  */
+	}	
+	table
+	{
+		padding: 5px;
+	}
+	
+  	table.pub_table,td.pub_td1,td.pub_td2
+	{
+		padding: 8px;
+		width: 990px;
+        border-collapse: separate;
+        border-spacing: 15px;
+        margin-top: -5px;
+	}
+
+	td.pub_td1
+	{
+		width:50px;
+	}
+    td.pub_td1 img
+    {
+        height:120px;
+        width: 160px;
+    }
+	
+	div#container
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width: 980px;
+		text-align: left;
+		position: relative;
+		background-color: #FFF;
+	}
+	div#DocInfo
+	{
+		/*color: #1367a7;*/
+		height: 158px;
+/*     		font-size:110%; */
+	}
+	h4,h3,h2,h1
+	{
+		color: #3B3B3B;
+	}
+	h1
+	{
+		font-size:210%;
+	}
+	h2
+	{
+		font-size:150%;
+	}
+	h3
+	{
+		font-size:110%;
+	}
+	h4
+	{
+		font-size:100%;
+	}
+	p
+	{
+/*		color: #5B5B5B;*/
+		margin-bottom: 10px;
+		/*margin-left: 20px;*/
+		text-indent:2em;
+	}
+	p.caption
+	{
+		color: #9B9B9B;
+		text-align: left;
+		width: 600px;
+	}
+	p.caption2
+	{
+		color: #9B9B9B;
+		text-align: left;
+		width: 800px;
+	}
+	#header_img
+	{
+		position: absolute;
+		top: 0px; right: 0px;
+    }
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+
+    #tsinghua_logo {
+        position: absolute;
+        left: 646px;
+        top: 28px;
+        width: 200px;
+        height: 20px;
+    }
+   
+    table.pub_table tr {
+        outline: thin dotted #666666;
+    }
+    .papericon {
+        border-radius: 8px; 
+        /*-moz-box-shadow: 3px 3px 6px #888;
+        -webkit-box-shadow: 3px 3px 6px #888;*/
+        /*box-shadow: 3px 3px 6px #888;*/
+    }
+
+
+underline {
+	border-bottom: 2px solid;
+	display:inline-block;
+}
+
+</style>
+
+<script type="text/javascript" language="javascript">
+	function addEventHandler(target, type, func){
+	if (target.addEventListener)
+	target.addEventListener(type, func, false);
+	else if (target.attachEvent)
+	target.attachEvent("on" + type, func);
+	else target["on" + type] = func;
+	}
+	var advIniTop = 0;
+	function move(){
+	var layer1 = document.getElementById("nav1");
+	if (layer1) layer1.style.top = advIniTop + document.body.scrollTop || document.documentElement.scrollTop + 10 + "px";
+	}
+	addEventHandler(window, "scroll", move);
+</script>
+
+</head>
+<a name="home"></a>
+<body>
+<div id="nav1" style="position:absolute;z-index:10;top:10px;left:100px;width:200px;">
+	<table>
+	  <td style="height:68px">
+	  </td>
+	</table>
+	<h2>Index</h2>
+	<table>
+	  <td style="height:15px">
+	  </td>
+	</table>
+	<div style="position:absolute;z-index:10;left:2px;border-left:2px solid #3B3B3B">
+	<table>
+	  <td style="width:15px">
+	  </td>
+	  <td valign="middle">
+	    <h4>
+			<a href="#home" style="color: #3B3B3B">Home</a><br><br>
+			<a href="#about-me" style="color: #3B3B3B">About Me</a><br><br>
+			<a href="#publications" style="color: #3B3B3B">Publications</a><br><br>
+			<a href="#education" style="color: #3B3B3B">Education</a><br><br>
+			<a href="#honors" style="color: #3B3B3B">Honors</a><br><br>
+			<a href="#contact" style="color: #3B3B3B">Contact</a><br><br>
+			<a href="index_cn.html" style="color: #3B3B3B">[中文版]</a>
+		</h4>
+	  </td>
+	</table></div><br><br>
+</div>
+<br>
+<div class="content">
+	<div id="container">
+	<table>
+	<tbody><tr>
+	<td style="width:400px">
+    <img id="myPicture" src="image/An_Tao.jpg" 
+	 style="float:center; border-radius: 15px"
+	 height="230px">
+  	</td>
+	<td>
+	<div id="DocInfo">
+	<br><br><h1>An Tao</h1><br>
+	<h3>Ph.D. Student, Tsinghua University</h3>
+	<h3></h3>
+	<font size=4.5><a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=0FyWZPMAAAAJ">Google Scholar</a> &bull; <a href="https://github.com/AnTao97">GitHub</a></font>
+	</div>
+	</td>
+	</tr>
+	</tbody></table>
+
+	<a name="about-me"></a><br><br><br>
+	<h2>About Me</h2><br>
+	<p>
+	I am a first year Ph.D. student in <a href="http://ivg.au.tsinghua.edu.cn/index.php">i-VisionGroup</a> of the <a href="http://www.au.tsinghua.edu.cn/publish/auen/index.html/">Department of Automation</a> at <a href="https://www.tsinghua.edu.cn/publish/thu2018en/index.html">Tsinghua University</a>, advised by Prof. <a href="https://www.tsinghua.edu.cn/publish/auen/1713/2011/20110506105532098625469/20110506105532098625469_.html">Jie Zhou</a> and Prof. <a href="http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/">Jiwen Lu</a>. 
+	Before that, I received my B.E. degree in <a href="http://radio.seu.edu.cn">Information Engineering</a>, <a href="http://www.seu.edu.cn/english/main.html">Southeast University</a>. </p>
+	<p>
+	My research interests lie in unsupervised learning, computer vision and 3D.
+	</p>
+	
+    <!-- <h2>Updates</h2>
+    <ul>
+        <li>[2019/02/25] 3 papers are accepted by <a href="http://cvpr2019.thecvf.com/">CVPR'19</a>!</li>
+        <li>[2018/10/09] I am honored with the National Scholarship of Tsinghua University.</li>
+        <li>[2018/08/20] I give a talk on <a href="ICPR18_metric.pdf"> Deep Metric Learning for Pattern Recognition</a> at the <a href="http://www.icpr2018.org/index.php?m=content&c=index&a=show&catid=47&id=2">Tutorial of ICPR'18</a>.
+        <li>[2018/07/26] I am honored with the Outstanding Reviewer Award of <a href="http://www.icme2018.org/">ICME'18</a>.</li>
+        <li>[2018/07/17] 1 paper is accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34#">TPAMI</a>!</li>
+        <li>[2018/07/03] 1 paper is accepted by <a href="https://eccv2018.org/">ECCV'18</a>!</li>
+        <li>[2018/05/15] I give a talk on <a href="FG18_face.pdf">Representation Learning for Face Alignment and Recognition</a> at the <a href="https://fg2018.cse.sc.edu/tutorial.html">Tutorial of FG'18</a>.
+        <li>[2018/02/28] 2 papers are accepted by <a href="http://cvpr2018.thecvf.com/">CVPR'18</a>!</li>
+        <li>[2017/10/10] I am honored with the National Scholarship of Tsinghua University.</li>
+        <li>[2017/05/25] 1 paper is accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34#">TPAMI</a>!</li>
+        <li>[2017/03/03] 1 paper is accepted by <a href="http://cvpr2017.thecvf.com/">CVPR'17</a>!</li>
+        <li>[2017/02/27] 1 paper is accepted by <a href="http://www.icme2017.org/">ICME'17</a>!</li>
+        </ul> -->
+
+
+
+
+  <!-- <h2>Selected Publications</h2>
+	<table class="pub_table" >
+	<tbody> 
+        <tr>
+           <td class="pub_td1"><img src="image/cluster_img.bmp" class="papericon"></td>
+           <td class="pub_td2"><u>Yueqi Duan</u>, Jiwen Lu, Ziwei Wang, Jianjiang Feng, and Jie Zhou<br><strong>Learning Deep Binary Descriptor with Multi-Quantization.</strong><br><i>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</i>, 2018, accepted.<br>[<a href="TPAMI18_Learning Deep Binary Descriptor with Multi-Quantization.pdf">PDF</a>]
+         </td>
+        </tr>
+
+        <tr>
+           <td class="pub_td1"><img src="image/calbfl_flowchart.bmp" class="papericon"></td>
+           <td class="pub_td2"><u>Yueqi Duan</u>, Jiwen Lu, Jianjiang Feng, and Jie Zhou<br><strong>Context-Aware Local Binary Feature Learning for Face Recognition.</strong><br><i>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</i>, vol. 40, no. 5, pp. 1139-1153, 2018.<br>[<a href="TPAMI18_Context-Aware Local Binary Feature Learning for Face Recognition.pdf">PDF</a>][<a href="https://github.com/duanyq14/CA-LBFL/">Code</a>]
+         </td>
+        </tr>
+
+        <tr>
+           <td class="pub_td1"><img src="image/dlml_flowchart.bmp" class="papericon"></td>
+           <td class="pub_td2"><u>Yueqi Duan</u>, Jiwen Lu, Jianjiang Feng, and Jie Zhou<br><strong>Deep Localized Metric Learning.</strong><br><i>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</i>, 2018, accepted.<br>[<a href="TCSVT18_Deep Localized Metric Learning.pdf">PDF</a>]
+         </td>
+        </tr>
+
+        <tr>
+           <td class="pub_td1"><img src="image/occluded.jpg" class="papericon"></td>
+           <td class="pub_td2"><u>Yueqi Duan</u>, Jiwen Lu, Jianjiang Feng, and Jie Zhou<br><strong>Topology-Preserving Structural Matching for Automatic Partial Face Recognition.</strong><br><i>IEEE Transactions on Information Forensics and Security (TIFS)</i>, vol. 13, no. 7, pp. 1823-1837, 2018.<br>[<a href="TIFS18_Topology-Preserving Structural Matching for Automatic Partial Face Recognition.pdf">PDF</a>]
+         </td>
+        </tr>        
+
+        <tr>
+           <td class="pub_td1"><img src="image/aml.bmp" class="papericon"></td>
+           <td class="pub_td2"><u>Yueqi Duan</u>, Wenzhao Zheng, Xudong Lin, Jiwen Lu, and Jie Zhou<br><strong>Deep Adversarial Metric Learning.</strong><br><i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</i>, pp. 2780-2789, 2018, as <b>spotlight</b>.<br>[<a href="CVPR18_Deep Adversarial Metric Learning.pdf">PDF</a>][<a href="DAML_slides.pdf">Slides</a>][<a href="DAML_poster.pdf">Poster</a>][<a href="https://github.com/duanyq14/daml/">Code</a>]
+         </td>
+        </tr>
+
+        <tr>
+           <td class="pub_td1"><img src="image/reliability.bmp" class="papericon"></td>
+           <td class="pub_td2"><u>Yueqi Duan</u>, Ziwei Wang, Jiwen Lu, Xudong Lin, and Jie Zhou<br><strong>GraphBit: Bitwise Interaction Mining via Deep Reinforcement Learning.</strong><br><i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</i>, pp. 8270-8279, 2018.<br>[<a href="CVPR18_GraphBit Bitwise Interaction Mining via Deep Reinforcement Learning.pdf">PDF</a>][<a href="GraphBit_poster.pdf">Poster</a>][<a href="https://github.com/duanyq14/graphbit/">Code</a>]
+         </td>
+        </tr>
+
+        <tr>
+           <td class="pub_td1"><img src="image/dvml_flowchart.png" class="papericon"></td>
+           <td class="pub_td2">Xudong Lin, <u>Yueqi Duan</u>, Qiyuan Dong, Jiwen Lu, and Jie Zhou<br><strong>Deep Variational Metric Learning.</strong><br><i>European Conference on Computer Vision (ECCV)</i>, 2018, accepted.<br>[<a href="ECCV18_Deep Variational Metric Learning.pdf">PDF</a>]
+           </td>
+        </tr>
+
+        <tr>
+           <td class="pub_td1"><img src="image/rilbd_flowchart.bmp" class="papericon"></td>
+           <td class="pub_td2"><u>Yueqi Duan</u>, Jiwen Lu, Jianjiang Feng, and Jie Zhou<br><strong>Learning Rotation-Invariant Local Binary Descriptor.</strong><br><i>IEEE Transactions on Image Processing (TIP)</i>, vol. 26, no. 8, pp. 3636-3651, 2017.<br>[<a href="TIP17_Learning Rotation-Invariant Local Binary Descriptor.pdf">PDF</a>]
+         </td>
+        </tr>
+
+        <tr>
+           <td class="pub_td1"><img src="image/binarization.bmp" class="papericon"></td>
+           <td class="pub_td2"><u>Yueqi Duan</u>, Jiwen Lu, Ziwei Wang, Jianjiang Feng, and Jie Zhou<br><strong>Learning Deep Binary Descriptor with Multi-Quantization.</strong><br><i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</i>, pp. 4857-4866, 2017.<br>[<a href="CVPR17_Learning Deep Binary Descriptor with Multi-Quantization.pdf">PDF</a>][<a href="dbdmq_poster.pdf">Poster</a>]
+         </td>
+        </tr>
+
+        <tr>
+           <td class="pub_td1"><img src="image/tpgm_flowchart.png" class="papericon"></td>
+           <td class="pub_td2"><u>Yueqi Duan</u>, Jiwen Lu, Jianjiang Feng, and Jie Zhou<br><strong>Topology Preserving Graph Matching for Partial Face Recognition.</strong><br><i>IEEE International Conference on Multimedia and Expo (ICME)</i>, pp. 1494-1499, 2017, as <b>oral</b>.<br>[<a href="ICME17_Topology Preserving Graph Matching for Partial Face Recognition.pdf">PDF</a>][<a href="TPGM_slides.pdf">Slides</a>]
+         </td>
+        </tr> -->
+
+  <a name="publications"></a><br><br><br>
+  <h2>Publications</h2><br>
+	<table>
+	  <tbody><tr>
+	  <td style="width:230px; height:110px" valign="middle" align='middle'>
+	    <img src="image/PRICAI18Enhancement.png" height="70px">
+	  </td>
+	  <td style="width:10px">
+	  </td>
+	  <td valign="middle">
+	    <div>
+	    	<b>Labeling Information Enhancement for Multi-label Learning with Low-rank Subspace</b>, <i>PRICAI 2018</i><br>
+	    	<b>An Tao</b>, Ning Xu, and Xin Geng<br>
+	    	[<a href="pdf/PRICAI18_Labeling Information Enhancement for Multi-label Learning with Low-rank Subspace.pdf">PDF</a>] [<a href="code/PRICAI18_Labeling Information Enhancement for Multi-label Learning with Low-rank Subspace.zip">Code</a>] [<a href="slides/PRICAI18_Labeling Information Enhancement for Multi-label Learning with Low-rank Subspace.pdf">Slides</a>]
+	    </div>
+	</tr></tbody>
+	</table>
+
+	<table>
+	  <tbody><tr>
+	  <td style="width:230px; height:110px" valign="middle" align='middle'>
+	    <img src="image/IJCAI18Embedding.png" height="90px">
+	  </td>
+	  <td style="width:10px">
+	  </td>
+	  <td valign="middle">
+	    <div>
+	    	<b>Label Embedding Based on Multi-Scale Locality Preservation</b>, <i>IJCAI 2018</i><br>
+	    	Cheng-Lun Peng, <b>An Tao</b>, and Xin Geng<br>
+	    	[<a href="pdf/IJCAI18_Label Embedding Based on Multi-Scale Locality Preservation.pdf">PDF</a>] [<a href="slides/IJCAI18_Label Embedding Based on Multi-Scale Locality Preservation.pdf">Slides</a>]
+	    </div>
+	</tr></tbody>
+	</table>
+
+	<table>
+	  <td style="width:230px; height:110px" valign="middle" align='middle'>
+	    <img src="image/IJCAI18Enhancement.png" height="100px">
+	  </td>
+	  <td style="width:10px">
+	  </td>
+	  <td valign="middle">
+	    <div>
+	    	<b>Label Enhancement for Label Distribution Learning</b>, <i>IJCAI 2018</i><br>
+	    	Ning Xu, <b>An Tao</b>, and Xin Geng<br>
+	    	[<a href="pdf/IJCAI18_Label Enhancement for Label Distribution Learning.pdf">PDF</a>] [<a href="slides/IJCAI18_Label Enhancement for Label Distribution Learning.pdf">Slides</a>]
+	    </div>
+	</tr></tbody>
+	</table>
+	<a name="education"></a><br><br><br>
+
+  <h2>Education</h2><br>
+	  <table>
+	  <tbody><tr>
+	  <td style="width:20px">
+	  </td>
+	  <td style="width:110px; height:110px" valign="middle">
+	    <a href="https://www.tsinghua.edu.cn/publish/thu2018en/index.html"><img src="image/tsinghua.png" height="100px"></a>
+	  </td>
+	  <td style="width:30px">
+	  </td>
+	  <td valign="middle">
+	    <div>
+	    <b>Ph.D. in Pattern Recognition and Machine Learning, Tsinghua University, China.</b><br>
+	    2019.8 - Present
+	    </ul>
+	    </div>
+	  </td>
+	  </tr></tbody>
+	  </table><br>
+	  <table>
+	  <tbody><tr>
+	  <td style="width:20px">
+	  </td>
+	  <td style="width:110px; height:110px" valign="middle">
+	    <a href="http://www.seu.edu.cn/english/main.html"><img src="image/seu.jpg" height="100px"></a>
+	  </td>
+	  <td style="width:30px">
+	  </td>
+	  <td valign="middle">
+	    <div>
+	    <b>B.Eng. in Information Engineering, Southeast University, China.</b><br>
+		2015.8 - 2019.6
+	    </ul>
+	    </div>
+	  </td>
+	  </tr></tbody>
+	  </table>
+
+    <a name="honors"></a><br><br><br>
+    <h2>Honors</h2><br>
+        <ul>
+            <li>Outstanding Graduate of Southeast University, 2019</li>
+	    	<li>Merit Student of Southeast University, 2016, 2017 & 2018</li>
+            <li>President Scholarship of Southeast University, 2016</li>
+            <li>Mayor's Award of Beijing in Technical Innovation, 2015</li>
+            <li>First Prize in the Awarding Program for Future Scientists, 2014</li>
+         </ul>
+
+<!--     <h2>Professional Activities</h2>
+        <ul>
+            <li><b>Reviewer</b>, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2018-.</li>
+            <li><b>Reviewer</b>, IEEE Transactions on Image Processing, 2017-.</li>
+            <li><b>Reviewer</b>, IEEE Transactions on Circuits and Systems for Video Technology, 2017-.</li>
+            <li><b>Reviewer</b>, IEEE Transactions on Information Forensics and Security, 2018-.</li>
+            <li><b>Reviewer</b>, IEEE Transactions on Biometrics, Behavior, and Identity Science, 2018-.</li>
+            <li><b>Reviewer</b>, IEEE Access, 2018-.</li>
+            <li><b>Reviewer</b>, Pattern Recognition, 2016-.</li>
+            <li><b>Reviewer</b>, Journal of Visual Communication and Image Representation, 2017-.</li>
+            <li><b>Reviewer</b>, International Journal of Machine Learning and Cybernetics, 2018-.</li>
+            <li><b>Reviewer</b>, Multimedia Systems, 2018-.</li>
+            <li><b>Reviewer</b>, IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2019.</li>
+            <li><b>Reviewer</b>, IEEE International Conference on Computer Vision, 2019.</li>
+            <li><b>Reviewer</b>, IEEE International Conference on Multimedia and Expo, 2018.</li>
+            <li><b>Reviewer</b>, IEEE International Conference on Image Processing, 2017-2018.</li>
+        </ul>   -->  
+   
+  	
+	<a name="contact"></a><br><br><br>
+	<h2>Contact</h2><br>
+	<table>
+    <tbody><tr>
+    <td style="width:15px">
+    </td>
+    <td valign="middle">
+      <div>
+      Email: ta19@mails.tsinghua.edu.cn<p></p>
+      Address: Room 624, Central Main building, Tsinghua University, Beijing
+      </div>
+    </td>
+    </tr></tbody>
+    </table>
+
+</div>
+</div>
+<center><font size=2 style="color: #BBBBBB">Copyright &copy 2020 An Tao. All Rights Reserved.</font></center><br>
+</body></html>
