@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html><head>
-<title>An Tao's Homepage</title>
+<title>Yulin Wang's Homepage</title>
 <link rel="icon" href="image/icon.jpg" >
 
-<script type="text/javascript">
-      //判断是否手机访问 如果是跳转 
-      try {
-      var urlhash = window.location.hash;
-      if (!urlhash.match("fromapp")) {
-      if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {
-      window.location = "/mobile.html";
-      }
-      }
-      } catch (err) {}
-</script>
+<!--<script type="text/javascript">-->
+      <!--//判断是否手机访问 如果是跳转 -->
+      <!--try {-->
+      <!--var urlhash = window.location.hash;-->
+      <!--if (!urlhash.match("fromapp")) {-->
+      <!--if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {-->
+      <!--window.location = "/mobile.html";-->
+      <!--}-->
+      <!--}-->
+      <!--} catch (err) {}-->
+<!--</script>-->
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 <style type="text/css">
@@ -187,11 +187,11 @@ underline {
 	    <h4>
 			<a href="#home" style="color: #3B3B3B">Home</a><br><br>
 			<a href="#about-me" style="color: #3B3B3B">About Me</a><br><br>
-			<a href="#publications" style="color: #3B3B3B">Publications</a><br><br>
+			<a href="#publications" style="color: #3B3B3B">Recent Publications & Preprints</a><br><br>
 			<a href="#education" style="color: #3B3B3B">Education</a><br><br>
+			<a href="#experience" style="color: #3B3B3B">Research Experience</a><br><br>
 			<a href="#honors" style="color: #3B3B3B">Honors</a><br><br>
-			<a href="#contact" style="color: #3B3B3B">Contact</a><br><br>
-			<a href="index_cn.html" style="color: #3B3B3B">[中文版]</a>
+			<a href="#contact" style="color: #3B3B3B">Contact</a><br>
 		</h4>
 	  </td>
 	</table></div><br><br>
@@ -202,16 +202,16 @@ underline {
 	<table>
 	<tbody><tr>
 	<td style="width:400px">
-    <img id="myPicture" src="image/An_Tao.jpg" 
+    <img id="myPicture" src="image/Yulin_Wang.jpg"
 	 style="float:center; border-radius: 15px"
 	 height="230px">
   	</td>
 	<td>
 	<div id="DocInfo">
-	<br><br><h1>An Tao</h1><br>
+	<br><h1>Yulin Wang (王语霖)</h1><br>
 	<h3>Ph.D. Student, Tsinghua University</h3>
 	<h3></h3>
-	<font size=4.5><a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=0FyWZPMAAAAJ">Google Scholar</a> &bull; <a href="https://github.com/AnTao97">GitHub</a></font>
+	<font size=4.5><a href="https://scholar.google.com/citations?user=gBP38gcAAAAJ&hl=zh-CN#">Google Scholar</a> &bull; <a href="https://www.semanticscholar.org/author/Yulin-Wang/39041697">Semantic Scholar</a> &bull; <a href="https://github.com/blackfeather-wang">GitHub</a></font>
 	</div>
 	</td>
 	</tr>
@@ -220,12 +220,15 @@ underline {
 	<a name="about-me"></a><br><br><br>
 	<h2>About Me</h2><br>
 	<p>
-	I am a first year Ph.D. student in <a href="http://ivg.au.tsinghua.edu.cn/index.php">i-VisionGroup</a> of the <a href="http://www.au.tsinghua.edu.cn/publish/auen/index.html/">Department of Automation</a> at <a href="https://www.tsinghua.edu.cn/publish/thu2018en/index.html">Tsinghua University</a>, advised by Prof. <a href="https://www.tsinghua.edu.cn/publish/auen/1713/2011/20110506105532098625469/20110506105532098625469_.html">Jie Zhou</a> and Prof. <a href="http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/">Jiwen Lu</a>. 
-	Before that, I received my B.E. degree in <a href="http://radio.seu.edu.cn">Information Engineering</a>, <a href="http://www.seu.edu.cn/english/main.html">Southeast University</a>. </p>
+	I am a first year Ph.D. student in the <a href="http://www.au.tsinghua.edu.cn/publish/auen/index.html/">Department of Automation</a> at <a href="https://www.tsinghua.edu.cn/en/index.htm">Tsinghua University</a>, advised by Prof. <a href="http://www.gaohuang.net/">Gao Huang</a> and Prof. <a href="https://www.tsinghua.edu.cn/info/1098/4408.htm">Cheng Wu</a>.
+	Before that, I received my B.E. degree in <a href="http://dept3.buaa.edu.cn/">Automation</a>, <a href="https://www.buaa.edu.cn/">Beihang University</a>. </p>
 	<p>
-	My research interests lie in unsupervised learning, computer vision and 3D.
+	Feel free to call me "Rainforest", which shares the same pronunciation as "Yulin" in Chinese.
 	</p>
-	
+	<p>
+	My research interests lie in the efficient training and inference of deep networks.
+	</p>
+
     <!-- <h2>Updates</h2>
     <ul>
         <li>[2019/02/25] 3 papers are accepted by <a href="http://cvpr2019.thecvf.com/">CVPR'19</a>!</li>
@@ -247,7 +250,7 @@ underline {
 
   <!-- <h2>Selected Publications</h2>
 	<table class="pub_table" >
-	<tbody> 
+	<tbody>
         <tr>
            <td class="pub_td1"><img src="image/cluster_img.bmp" class="papericon"></td>
            <td class="pub_td2"><u>Yueqi Duan</u>, Jiwen Lu, Ziwei Wang, Jianjiang Feng, and Jie Zhou<br><strong>Learning Deep Binary Descriptor with Multi-Quantization.</strong><br><i>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</i>, 2018, accepted.<br>[<a href="TPAMI18_Learning Deep Binary Descriptor with Multi-Quantization.pdf">PDF</a>]
@@ -270,7 +273,7 @@ underline {
            <td class="pub_td1"><img src="image/occluded.jpg" class="papericon"></td>
            <td class="pub_td2"><u>Yueqi Duan</u>, Jiwen Lu, Jianjiang Feng, and Jie Zhou<br><strong>Topology-Preserving Structural Matching for Automatic Partial Face Recognition.</strong><br><i>IEEE Transactions on Information Forensics and Security (TIFS)</i>, vol. 13, no. 7, pp. 1823-1837, 2018.<br>[<a href="TIFS18_Topology-Preserving Structural Matching for Automatic Partial Face Recognition.pdf">PDF</a>]
          </td>
-        </tr>        
+        </tr>
 
         <tr>
            <td class="pub_td1"><img src="image/aml.bmp" class="papericon"></td>
@@ -309,62 +312,82 @@ underline {
         </tr> -->
 
   <a name="publications"></a><br><br><br>
-  <h2>Publications</h2><br>
+  <h2>Recent Publications & Preprints</h2><br>
 	<table>
 	  <tbody><tr>
 	  <td style="width:230px; height:110px" valign="middle" align='middle'>
-	    <img src="image/PRICAI18Enhancement.png" height="70px">
+	    <img src="image/isda_journal.png" width="250">
 	  </td>
 	  <td style="width:10px">
 	  </td>
 	  <td valign="middle">
 	    <div>
-	    	<b>Labeling Information Enhancement for Multi-label Learning with Low-rank Subspace</b>, <i>PRICAI 2018</i><br>
-	    	<b>An Tao</b>, Ning Xu, and Xin Geng<br>
-	    	[<a href="pdf/PRICAI18_Labeling Information Enhancement for Multi-label Learning with Low-rank Subspace.pdf">PDF</a>] [<a href="code/PRICAI18_Labeling Information Enhancement for Multi-label Learning with Low-rank Subspace.zip">Code</a>] [<a href="slides/PRICAI18_Labeling Information Enhancement for Multi-label Learning with Low-rank Subspace.pdf">Slides</a>]
+	    	<b>Regularizing Deep Networks with Semantic Data Augmentation</b><br>
+			<i>Arxiv Preprint</i><br>
+	    	<b>Yulin Wang</b>, Gao Huang, Shiji Song, Xuran Pan, Yitong Xia, and Cheng Wu<br>
+	    	[<a href="https://arxiv.org/abs/2007.10538">Arxiv</a>] [<a href="https://github.com/blackfeather-wang/ISDA-for-Deep-Networks">Code</a>]<br>
+			Journal Version of ISDA. More ImageNet results. More results on semi-supervised learning, semantic segmentation and object detection.
 	    </div>
 	</tr></tbody>
-	</table>
+	</table><br>
 
 	<table>
 	  <tbody><tr>
 	  <td style="width:230px; height:110px" valign="middle" align='middle'>
-	    <img src="image/IJCAI18Embedding.png" height="90px">
+	    <img src="image/meta_semi.png" width="250">
 	  </td>
 	  <td style="width:10px">
 	  </td>
 	  <td valign="middle">
 	    <div>
-	    	<b>Label Embedding Based on Multi-Scale Locality Preservation</b>, <i>IJCAI 2018</i><br>
-	    	Cheng-Lun Peng, <b>An Tao</b>, and Xin Geng<br>
-	    	[<a href="pdf/IJCAI18_Label Embedding Based on Multi-Scale Locality Preservation.pdf">PDF</a>] [<a href="slides/IJCAI18_Label Embedding Based on Multi-Scale Locality Preservation.pdf">Slides</a>]
+	    	<b>Meta-Semi: A Meta-learning Approach for Semi-supervised Learning</b><br>
+			<i>Arxiv Preprint</i><br>
+			<b>Yulin Wang</b>, Jiayi Guo, Shiji Song, and Gao Huang<br>
+	    	[<a href="https://arxiv.org/abs/2007.02394">Arxiv</a>]<br>
+			In real semi-supervised learning scenarios, the labeled data is scarce for extensive hyper-parameter search. To this end, we propose a novel meta-learning based algorithm that requires tuning only one additional hyper-parameter to achieve competitive performance under various conditions.
 	    </div>
 	</tr></tbody>
-	</table>
+	</table><br>
 
 	<table>
 	  <td style="width:230px; height:110px" valign="middle" align='middle'>
-	    <img src="image/IJCAI18Enhancement.png" height="100px">
+	    <img src="image/isda.png" width="250">
 	  </td>
 	  <td style="width:10px">
 	  </td>
 	  <td valign="middle">
 	    <div>
-	    	<b>Label Enhancement for Label Distribution Learning</b>, <i>IJCAI 2018</i><br>
-	    	Ning Xu, <b>An Tao</b>, and Xin Geng<br>
-	    	[<a href="pdf/IJCAI18_Label Enhancement for Label Distribution Learning.pdf">PDF</a>] [<a href="slides/IJCAI18_Label Enhancement for Label Distribution Learning.pdf">Slides</a>]
-	    </div>
+	    	<b>Implicit Semantic Data Augmentation for Deep Networks</b><br>
+			<i>NeurIPS 2019</i><br>
+	    	<b>Yulin Wang</b>*, Xuran Pan*, Shiji Song, Hong Zhang, Cheng Wu, and Gao Huang<br>
+	    	[<a href="https://arxiv.org/abs/1909.12220">Arxiv</a>] [<a href="https://github.com/blackfeather-wang/ISDA-for-Deep-Networks">Code</a>] [<a href="https://github.com/blackfeather-wang/ISDA-for-Deep-Networks/blob/master/Poster/NeurIPS%20poster%20v5.pdf">Poster</a>]<br>
+			We propose a novel implicit semantic data augmentation (ISDA) approach to complement traditional augmentation techniques like flipping or translation.
+		</div>
+	</tr></tbody>
+	</table><br>
+
+	<table>
+	  <td style="width:230px; height:110px" valign="middle" align='middle'>
+	    <img src="image/cl.png" width="250">
+	  </td>
+	  <td style="width:10px">
+	  </td>
+	  <td valign="middle">
+	    <div>
+	    	<b>Collaborative Learning with Corrupted Labels</b><br>
+			<i>Neural Networks</i><br>
+	    	<b>Yulin Wang</b>, Rui Huang, Gao Huang, Shiji Song, and Cheng Wu<br>
+	    	[<a href="https://www.researchgate.net/profile/Yulin_Wang31/publication/339514417_Collaborative_learning_with_corrupted_labels/links/5e60f156a6fdccac3ceb5166/Collaborative-learning-with-corrupted-labels.pdf">PDF</a>]<br>
+			We propose a collaborative learning approach to improve the robustness and generalization performance of DNNs on datasets with corrupted labels.
+		</div>
 	</tr></tbody>
 	</table>
+
 	<a name="education"></a><br><br><br>
-
   <h2>Education</h2><br>
 	  <table>
 	  <tbody><tr>
 	  <td style="width:20px">
-	  </td>
-	  <td style="width:110px; height:110px" valign="middle">
-	    <a href="https://www.tsinghua.edu.cn/publish/thu2018en/index.html"><img src="image/tsinghua.png" height="100px"></a>
 	  </td>
 	  <td style="width:30px">
 	  </td>
@@ -381,15 +404,46 @@ underline {
 	  <tbody><tr>
 	  <td style="width:20px">
 	  </td>
-	  <td style="width:110px; height:110px" valign="middle">
-	    <a href="http://www.seu.edu.cn/english/main.html"><img src="image/seu.jpg" height="100px"></a>
+	  <td style="width:30px">
+	  </td>
+	  <td valign="middle">
+	    <div>
+	    <b>B.Eng. in Automation, Beihang University, China.</b><br>
+		2015.8 - 2019.6 (GPA 1/200+)
+	    </ul>
+	    </div>
+	  </td>
+	  </tr></tbody>
+	  </table>
+
+
+	<a name="experience"></a><br><br><br>
+  	<h2>Research Experience</h2><br>
+	  <table>
+	  <tbody><tr>
+	  <td style="width:20px">
 	  </td>
 	  <td style="width:30px">
 	  </td>
 	  <td valign="middle">
 	    <div>
-	    <b>B.Eng. in Information Engineering, Southeast University, China.</b><br>
-		2015.8 - 2019.6
+	    <b>Intern, Berkeley Deep Drive, University of California Berkeley, CA, USA.</b><br>
+	    2018.7 - 2018.8, advised by Dr. <a href="https://path.berkeley.edu/ching-yao-chan">Ching-Yao Chan</a>.
+	    </ul>
+	    </div>
+	  </td>
+	  </tr></tbody>
+	  </table><br>
+	  <table>
+	  <tbody><tr>
+	  <td style="width:20px">
+	  </td>
+	  <td style="width:30px">
+	  </td>
+	  <td valign="middle">
+	    <div>
+	    <b>Intern, Lab of Intelligent Manufacturing, Beihang University, China.</b><br>
+		2017.6 - 2018.6, advised by Prof. <a href="https://scholar.google.com/citations?user=-LQGKncAAAAJ&hl=zh-CN&oi=ao">Fei Tao</a>.
 	    </ul>
 	    </div>
 	  </td>
@@ -399,11 +453,11 @@ underline {
     <a name="honors"></a><br><br><br>
     <h2>Honors</h2><br>
         <ul>
-            <li>Outstanding Graduate of Southeast University, 2019</li>
-	    	<li>Merit Student of Southeast University, 2016, 2017 & 2018</li>
-            <li>President Scholarship of Southeast University, 2016</li>
-            <li>Mayor's Award of Beijing in Technical Innovation, 2015</li>
-            <li>First Prize in the Awarding Program for Future Scientists, 2014</li>
+            <li>Shenyuan Medal, Beihang University, 2018 (10/3000+)</li>
+	    	<li>National Scholarship, Ministry of Education of China, 2017 & 2018 (Top 2%)</li>
+            <li>Innovation Scholarship, Ministry of Industry and Information Technology of China, 2017 (1/200+)</li>
+            <li>First Prize in National Undergraduate Mathematical Contest in Modeling, 2017</li>
+            <li>Scholarship for Outstanding Academic Performance, Beihang University, 2016-2019 (Top 5%)</li>
          </ul>
 
 <!--     <h2>Professional Activities</h2>
@@ -422,9 +476,9 @@ underline {
             <li><b>Reviewer</b>, IEEE International Conference on Computer Vision, 2019.</li>
             <li><b>Reviewer</b>, IEEE International Conference on Multimedia and Expo, 2018.</li>
             <li><b>Reviewer</b>, IEEE International Conference on Image Processing, 2017-2018.</li>
-        </ul>   -->  
-   
-  	
+        </ul>   -->
+
+
 	<a name="contact"></a><br><br><br>
 	<h2>Contact</h2><br>
 	<table>
@@ -433,8 +487,8 @@ underline {
     </td>
     <td valign="middle">
       <div>
-      Email: ta19@mails.tsinghua.edu.cn<p></p>
-      Address: Room 624, Central Main building, Tsinghua University, Beijing
+      Email: wang-yl19@mails.tsinghua.edu.cn<p></p>
+      Address: Room 616, Central Main building, Tsinghua University, Beijing
       </div>
     </td>
     </tr></tbody>
@@ -442,5 +496,5 @@ underline {
 
 </div>
 </div>
-<center><font size=2 style="color: #BBBBBB">Copyright &copy 2020 An Tao. All Rights Reserved.</font></center><br>
+<center><font size=2 style="color: #BBBBBB">Design and source code from <a href="https://www.antao.site/">An Tao's website</a>.</font></center><br>
 </body></html>
