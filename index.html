@@ -1,786 +1,311 @@
-<!DOCTYPE html>
-<html><head>
-<title>Yulin Wang's Homepage</title>
-<link rel="icon" href="image/icon.jpg" >
 
-<!--<script type="text/javascript">-->
-      <!--//判断是否手机访问 如果是跳转 -->
-      <!--try {-->
-      <!--var urlhash = window.location.hash;-->
-      <!--if (!urlhash.match("fromapp")) {-->
-      <!--if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {-->
-      <!--window.location = "/mobile.html";-->
-      <!--}-->
-      <!--}-->
-      <!--} catch (err) {}-->
-<!--</script>-->
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-<style type="text/css">
-
-body
-{
- 	font-family: 'Lucida Grande',Arial,Helvetica,'STXihei',sans-serif; 
-    background-color : #fff;
-    font-size: 18px;
-    width : 1440px;
-}
-    .content
-	{
-    		width : 1100px;
-    		padding : 25px 30px;
-    		margin : 25px auto;
-    		margin-left: 260px;
-/*     		background-color : #fff;
-    		box-shadow: 0px 0px 10px #999; */
-/*     		border-radius: 15px;  */
-	}	
-	table
-	{
-		padding: 5px;
-	}
-	
-  	table.pub_table,td.pub_td1,td.pub_td2
-	{
-		padding: 8px;
-		width: 990px;
-        border-collapse: separate;
-        border-spacing: 15px;
-        margin-top: -5px;
-	}
-
-	td.pub_td1
-	{
-		width:50px;
-	}
-    td.pub_td1 img
-    {
-        height:120px;
-        width: 160px;
-    }
-	
-	div#container
-	{
-		margin-left: auto;
-		margin-right: auto;
-		width: 1040px;
-		text-align: left;
-		position: relative;
-		background-color: #FFF;
-	}
-	div#DocInfo
-	{
-		/*color: #1367a7;*/
-		height: 158px;
-/*     		font-size:110%; */
-	}
-	h4,h3,h2,h1
-	{
-		color: #3B3B3B;
-	}
-	h1
-	{
-		font-size:210%;
-	}
-	h2
-	{
-		font-size:150%;
-	}
-	h3
-	{
-		font-size:110%;
-	}
-	h4
-	{
-		font-size:100%;
-	}
-	p
-	{
-/*		color: #5B5B5B;*/
-		margin-bottom: 10px;
-		/*margin-left: 20px;*/
-		text-indent:2em;
-	}
-	p.caption
-	{
-		color: #9B9B9B;
-		text-align: left;
-		width: 600px;
-	}
-	p.caption2
-	{
-		color: #9B9B9B;
-		text-align: left;
-		width: 800px;
-	}
-	#header_img
-	{
-		position: absolute;
-		top: 0px; right: 0px;
-    }
-	a:link,a:visited
-	{
-		color: #1367a7;
-		text-decoration: none;
-	}
-
-    #tsinghua_logo {
-        position: absolute;
-        left: 646px;
-        top: 28px;
-        width: 200px;
-        height: 20px;
-    }
-   
-    table.pub_table tr {
-        outline: thin dotted #666666;
-    }
-    .papericon {
-        border-radius: 8px; 
-        /*-moz-box-shadow: 3px 3px 6px #888;
-        -webkit-box-shadow: 3px 3px 6px #888;*/
-        /*box-shadow: 3px 3px 6px #888;*/
-    }
-
-
-underline {
-	border-bottom: 2px solid;
-	display:inline-block;
-}
-
-</style>
-
-<script type="text/javascript" language="javascript">
-	function addEventHandler(target, type, func){
-	if (target.addEventListener)
-	target.addEventListener(type, func, false);
-	else if (target.attachEvent)
-	target.attachEvent("on" + type, func);
-	else target["on" + type] = func;
-	}
-	var advIniTop = 0;
-	function move(){
-	var layer1 = document.getElementById("nav1");
-	if (layer1) layer1.style.top = advIniTop + document.body.scrollTop || document.documentElement.scrollTop + 10 + "px";
-	}
-	addEventHandler(window, "scroll", move);
-</script>
-
-
-
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?29efd6468fd0186f0fea2a1a307a70cb";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="Yulin Wang's homepage">
+	<link rel="stylesheet" href="./files/jemdoc.css" type="text/css">
+	<title>Yulin Wang (王语霖)</title>
 </head>
 
 
-
-
-<a name="home"></a>
 <body>
-<div id="nav1" style="position:absolute;z-index:10;top:10px;left:100px;width:200px;">
-	<table>
-	  <td style="height:68px">
-	  </td>
-	</table>
-	<h2>Index</h2>
-	<table>
-	  <td style="height:15px">
-	  </td>
-	</table>
-	<div style="position:absolute;z-index:10;left:2px;border-left:2px solid #3B3B3B">
-	<table>
-	  <td style="width:15px">
-	  </td>
-	  <td valign="middle">
-	    <h4>
-			<a href="#home" style="color: #3B3B3B">Home</a><br><br>
-			<a href="#about-me" style="color: #3B3B3B">About Me</a><br><br>
-			<a href="#news" style="color: #3B3B3B">News</a><br><br>
-			<a href="#publications" style="color: #3B3B3B">Publications</a><br><br>
-			<!-- <a href="#talks" style="color: #3B3B3B">Invited Talks</a><br><br> -->
-			<a href="#service" style="color: #3B3B3B">Service</a><br><br>
-			<a href="#education" style="color: #3B3B3B">Education</a><br><br>
-			<a href="#experience" style="color: #3B3B3B">Research Experience</a><br><br>
-			<a href="#honors" style="color: #3B3B3B">Selected Honors</a><br><br>
-			<a href="#contact" style="color: #3B3B3B">Contact</a><br>
-		</h4>
-	  </td>
-	</table></div><br><br>
-</div>
-<br>
-<div class="content">
-	<div id="container">
-	<table>
-	<tbody><tr>
-		<td style="width:50px">
-  	</td>
-	<td style="width:310px">
-    <img id="myPicture" src="image/Yulin_Wang.jpg"
-	 style="float:center; border-radius: 15px"
-	 height="260px">
-  	</td>
-	<td>
-	<div id="DocInfo">
-	<!--<br>-->
-		<h1>Yulin Wang (王语霖)</h1><br>
-	<h3>Ph.D. Student, Tsinghua University</h3>
-	<h3></h3>
-	<font size=4.5><a href="./Yulin_Wang_Curriculum_Vitae.pdf">CV (2022.11)</a> &bull; <a href="https://scholar.google.com/citations?user=gBP38gcAAAAJ&hl=zh-CN#">Google Scholar</a> &bull; <a href="https://www.semanticscholar.org/author/Yulin-Wang/39041697">Semantic Scholar</a> &bull; <a href="https://github.com/blackfeather-wang">GitHub</a></font>
-	</div>
-	</td>
-	</tr>
-	</tbody></table>
 
-	<a name="about-me"></a><br><br><br>
-	<h2>About Me</h2><br>
-	<p>
-	I am a fourth year Ph.D. student in the <a href="http://www.au.tsinghua.edu.cn/">Department of Automation</a> at <a href="https://www.tsinghua.edu.cn/en/index.htm">Tsinghua University</a>, advised by Prof. <a href="http://www.gaohuang.net/">Gao Huang</a> and Prof. <a href="http://www.au.tsinghua.edu.cn/info/1075/1586.htm">Cheng Wu</a>.
-	Before that, I received my B.E. degree in <a href="http://dept3.buaa.edu.cn/">Automation</a> at <a href="https://www.buaa.edu.cn/">Beihang University</a>. </p>
-	<p>
-	Feel free to call me "Rainforest", which has the same pronunciation as "Yulin" in Chinese.
-	</p>
-	<p>
-	My research interests lie in the efficient training and inference of deep learning models.
-	</p>
+<div id="layout-content" style="margin-top:25px">
 
+<table>
+	<tbody>
+		<tr>
+			<td width="670">
+				<div id="toptitle">					
+					<h1>Yulin Wang (王语霖) &nbsp;</div>
 
-
-	<a name="news"></a><br><br><br>
-	<h2>News</h2><br>
-	<p>
-	2022.10: Winning the <a href="https://ur.bytedance.com/scholarship">2022 ByteDance Scholarship</a> (字节跳动奖学金, <b><font color="red">10</font> PhD students in China</b>).
-	<p>
-	2022.09: Winning the <a href="https://www.msra.cn/zh-cn/news/features/2022-fellows">2022 Microsoft Research Asia Fellowship Award</a> ("微软学者"奖学金, <b><font color="red">12</font> PhD students in the Asia-Pacific region</b>).
-	<p>
-	2022.07: The <a href="https://arxiv.org/pdf/2201.03014.pdf">Journal Version of GFNet</a> is Accepted by <b><font color="red">TPAMI</font> (IF=24.31)</b>.
-	<p>
-	2022.03 & 2022.07: <a href="https://arxiv.org/pdf/2112.14238.pdf">AdaFocusV2</a> & <a href="https://arxiv.org/pdf/2209.13465.pdf">AdaFocusV3</a> are Accepted by CVPR 2022 & ECCV 2022.
-	<p>
-	2021.12: Winning the <a href="https://mp.weixin.qq.com/s/1Qkc2mZ_MJ2hKNZZDT7RQA">2021 Baidu Scholarship</a> (百度奖学金, <b><font color="red">10</font>  PhD students worldwide</b>).
-	<p>
-	2021.10: Winning the 2021 CCF-CV Outstanding Young Researcher Award (CCF-CV学术新锐奖, <b><font color="red">3</font> PhD or Master students in China</b>).
-	<p>
-	2021.09: Not All Images are Worth 16x16 Words! Our <a href="https://arxiv.org/pdf/2105.15075.pdf">Dynamic ViT (DVT)</a> is Accepted by NeurIPS 2021.
-	<p>
-	2021.09: Our <a href="https://arxiv.org/pdf/2102.04906.pdf">Survey on Dynamic Neural Networks</a> is Accepted by <b><font color="red">TPAMI</font> (IF=24.31)</b>.
-	<p>
-	2021.07: <a href="https://arxiv.org/pdf/2105.03245.pdf">AdaFocus</a> is Accepted by ICCV 2021 for <b><font color="red">Oral</font> Presentation</b>.
-	<!--<p>-->
-	<!--2021.06: Not All Images are Worth 16x16 Words! Our Dynamic ViT (DVT) is Available at <a href="https://arxiv.org/pdf/2105.15075v1.pdf">Arxiv</a>/<a href="https://github.com/blackfeather-wang/Dynamic-Vision-Transformer">Github</a>.-->
-	<p>
-	2021.05: Selected to be an <a href="http://cvpr2021.thecvf.com/node/184">Outstanding Reviewer</a> of CVPR 2021.
-	<p>
-	2021.03: Three Papers are Accepted by CVPR 2021 (with one <b><font color="red">Oral</font></b>).
-	<p>
-	2021.01: The <a href="https://arxiv.org/pdf/2007.10538.pdf">Journal Version of ISDA</a> is Accepted by <b><font color="red">TPAMI</font> (IF=24.31)</b>.
-	<p>
-	2021.01: One Paper is Accepted by ICLR 2021.
-	</p>
-
-
-  <a name="publications"></a><br><br><br>
-  <h2>Recent Publications (Selected)</h2><br>
-
-
-		<table>
-	  <tbody><tr>
-	  <td style="width:252px; height:110px" valign="middle" align='middle'>
-	    <img src="image/gfnet.png" height="250">
-	  </td>
-	  <td style="width:10px">
-	  </td>
-	  <td valign="middle">
-	    <div>
-	    	<b>Glance and Focus Networks for Dynamic Visual Recognition</b><br>
-			<i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b><font color="red">TPAMI</font></b>, IF=24.31), 2022</i><br>
-	    	Gao Huang*, <b>Yulin Wang*</b>, Kangchen Lv, Haojun Jiang, Wenhui Huang, Pengfei Qi, and Shiji Song <font color="red"><i>(<b>co-first author</b> with my advisor)</i></font><br>
-	    	[<a href="https://arxiv.org/pdf/2201.03014.pdf">PDF</a>] [<a href="https://github.com/blackfeather-wang/GFNet-Pytorch">Code</a>] [<a href="https://zhuanlan.zhihu.com/p/266306870">知乎 (on GFNet)</a>] <br>
-			Journal version of GFNet. Additional exploration on the new reward function and the multi-scale patches. New results on high-resolution image recognition and video recognition. Significantly reducing the inference cost on both CPUs and GPUs.
-	    </div>
+				<h3>Ph.D. Student</h3>  
+				<p>
+					Department of Automation, Tsinghua University<br>
+					<!-- Beijing, China, 100084<br> -->
+					<br>
+Email:  <a href="mailto:wang-yl19@mails.tsinghua.edu.cn">wang-yl19@mails.tsinghua.edu.cn</a>; <a href="mailto:yulin.bh@gmail.com">yulin.bh@gmail.com</a> <br>
+<a href="files/wyl_cv.pdf">[Curriculum Vitae (08/2023)]</a>  <br>
+<a href="https://scholar.google.com/citations?user=gBP38gcAAAAJ&hl=en">[Google Scholar]</a>
+					<br>
+				</p>
+			</td>
+			<td>
+				<img src="./files/Yulin_Wang.jpg" border="0" width="200">
+			</td>
+		</tr><tr>
 	</tr></tbody>
-	</table><br><br>
+</table>
+<h2>Short Bio</h2>
+<p>
+	Yulin Wang is a Ph.D. student in the <a href="http://www.au.tsinghua.edu.cn/">Department of Automation</a> at <a href="https://www.tsinghua.edu.cn/en/index.htm">Tsinghua University</a>, advised by Prof. <a href="http://www.gaohuang.net/">Gao Huang</a> and Prof. <a href="https://www.tsinghua.edu.cn/info/1166/93894.htm">Cheng Wu</a>.
+	Before that, he received his B.E. degree in <a href="http://dept3.buaa.edu.cn/">Automation</a> at <a href="https://www.buaa.edu.cn/">Beihang University</a> in 2019.
+	He was a research intern at <a href="https://deepdrive.berkeley.edu/">Berkeley DeepDrive, U.C. Berkeley</a>, in 2018. His research focuses on computation/data-efficient deep learning, dynamic neural networks, and the application of these techniques in the field of computer vision.
+
+<h2>News</h2>
+
+<ul>
+      <li> [2023.07] Five Papers are Accepted by ICCV 2023.
+      </li>
+      <li> [2022.10] Winning the <a href="https://ur.bytedance.com/scholarship">2022 ByteDance Scholarship</a> <br>
+         (字节跳动奖学金, <b><font color="red">10 PhD students in China</font></b>).
+      </li>
+      <li> [2022.09] Winning the <a href="https://www.msra.cn/zh-cn/news/features/2022-fellows">2022 Microsoft Research Asia Fellowship Award</a> <br>
+         ("微软学者"奖学金, <b><font color="red">12 PhD students in the Asia-Pacific region</font></b>).
+      </li>
+      <li> 	[2022.07] The <a href="https://arxiv.org/pdf/2201.03014.pdf">Journal Version of GFNet</a> is Accepted by <b><font color="red">TPAMI</font> (IF=23.6)</b>.
+      </li>
+      <li>	[2022.03 & 2022.07] <a href="https://arxiv.org/pdf/2112.14238.pdf">AdaFocusV2</a> & <a href="https://arxiv.org/pdf/2209.13465.pdf">AdaFocusV3</a> are Accepted by CVPR 2022 & ECCV 2022.
+      </li>
+      <li>	[2021.12] Winning the <a href="https://mp.weixin.qq.com/s/1Qkc2mZ_MJ2hKNZZDT7RQA">2021 Baidu Scholarship</a> <br>
+         (百度奖学金, <b><font color="red">10 PhD students worldwide</font></b>).
+      </li>
+      <li>	[2021.10] Winning the <a href="https://tc.ccf.org.cn/ccfcv/xgzy/timing/2021-05-04/697856.shtml">2021 CCF-CV Outstanding Young Researcher Award</a> <br>
+         (CCF-CV学术新锐奖, <b><font color="red">3 PhD or Master students in China</font></b>).
+      </li>
+      <li> 	[2021.09] Not All Images are Worth 16x16 Words! Our <a href="https://arxiv.org/pdf/2105.15075.pdf">Dynamic ViT (DVT)</a> is Accepted by NeurIPS 2021.
+      </li> 
+      <li>	[2021.09] Our <a href="https://arxiv.org/pdf/2102.04906.pdf">Survey on Dynamic Neural Networks</a> is Accepted by <b><font color="red">TPAMI</font> (IF=23.6)</b>.
+      </li> 
+      <li>	[2021.07] <a href="https://arxiv.org/pdf/2105.03245.pdf">AdaFocus</a> is Accepted by ICCV 2021 for <b><font color="red">Oral</font> Presentation</b>.
+      </li> 
+      <li> 	[2021.05] Selected to be an <a href="http://cvpr2021.thecvf.com/node/184">Outstanding Reviewer</a> of CVPR 2021.
+      </li> 
+      <li>	[2021.03] Three Papers are Accepted by CVPR 2021 (with one <b><font color="red">Oral</font></b>).
+      </li> 
+      <li>	[2021.01] The <a href="https://arxiv.org/pdf/2007.10538.pdf">Journal Version of ISDA</a> is Accepted by <b><font color="red">TPAMI</font> (IF=23.6)</b>.
+      </li> 
+      <li>	[2021.01] One Paper is Accepted by ICLR 2021.
+      </li> 
+   </ul>
+
+<h2>Publications</h2>
+
+<h3>2023</h3>
+<ul>
+      <li>
+         <a href='https://arxiv.org/pdf/2201.03014.pdf'>Glance and Focus Networks for Dynamic Visual Recognition</a><br>
+         Gao Huang*, <b>Yulin Wang*</b>, Kangchen Lv, Haojun Jiang, Wenhui Huang, Pengfei Qi, Shiji Song  <br>
+         <font color="red"><i> (<b>co-first author</b> with my advisor)</i></font><br>
+			<i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b><font color="red">TPAMI</font></b>, IF=23.6), 2023</i><br>
+         [<a href="https://github.com/blackfeather-wang/GFNet-Pytorch">Code</a>] [<a href="https://zhuanlan.zhihu.com/p/266306870">知乎 (on GFNet)</a>] <br>
+   </li>
+   <li>
+      <a href='https://ieeexplore.ieee.org/document/10155270'>Dynamic Spatial Focus for Efficient Compressed Video Action Recognition</a><br>
+      Ziwei Zheng, Le Yang, <b>Yulin Wang</b>, Miao Zhang, Lijun He, Gao Huang, Fan Li <br>
+      <i>IEEE Transactions on Circuits and Systems for Video Technology (<b>TCSVT</b>, IF=8.4), 2023</i><br>
+   </li>
+   <li>
+      <a href=''>Computationally Efficient Deep Learning for Computer Vision: A Survey</a><br>
+      <b>Yulin Wang</b>, Yizeng Han, Chaofei Wang, Shiji Song, Qi Tian, Gao Huang <br>
+      <i>Cybernetics and Intelligence (sponsored by the Department of Automation, Tsinghua University -- 清华自动化主办), 2023</i><br>
+   </li>
+      <li>
+         <a href='https://arxiv.org/pdf/2211.09703.pdf'>EfficientTrain: Exploring Generalized Curriculum Learning for Training Visual Backbones</a><br>
+         <b>Yulin Wang</b>, Yang Yue, Rui Lu, Tianjiao Liu, Zhao Zhong, Shiji Song, Gao Huang  <br>
+			<i>IEEE/CVF International Conference on Computer Vision (<b>ICCV</b>), 2023</i><br>
+         [<a href="https://github.com/LeapLabTHU/EfficientTrain">Code</a>] <br>
+   </li>
+      <li>
+         <a href='https://arxiv.org/pdf/2212.04129.pdf'>Deep Incubation: Training Large Models by Divide-and-Conquering</a><br>
+         Zanlin Ni*, <b>Yulin Wang*</b>, Jiangwei Yu, Haojun Jiang, Yue Cao, Gao Huang  <br>
+         <font color="red"><i> (co-first author)</i></font><br>
+			<i>IEEE/CVF International Conference on Computer Vision (<b>ICCV</b>), 2023</i><br>
+         [<a href="https://github.com/LeapLabTHU/Deep-Incubation">Code</a>] <br>
+   </li>
+   <li>
+      <a href='https://arxiv.org/pdf/2306.11248.pdf'>Dynamic Perceiver for Efficient Visual Recognition</a><br>
+      Yizeng Han, Dongchen Han, Zeyu Liu, <b>Yulin Wang</b>, Xuran Pan, Yifan Pu, Chao Deng, Junlan Feng, Shiji Song, Gao Huang  <br>
+      <i>IEEE/CVF International Conference on Computer Vision (<b>ICCV</b>), 2023</i><br>
+      [<a href="https://github.com/LeapLabTHU/Dynamic_Perceiver">Code</a>] <br>
+   </li>
+   <li>
+      <a href='https://arxiv.org/pdf/2303.07820.pdf'>Adaptive Rotated Convolution for Rotated Object Detection</a><br>
+      Yifan Pu, Yiru Wang, Zhuofan Xia, Yizeng Han, <b>Yulin Wang</b>, Weihao Gan, Zidong Wang, Shiji Song, Gao Huang  <br>
+      <i>IEEE/CVF International Conference on Computer Vision (<b>ICCV</b>), 2023</i><br>
+   </li>
+   <li>
+      <a href=''>Borrowing Knowledge From Pre-trained Language Model: a New Data-efficient Visual Learning Paradigm</a><br>
+      Wenxuan Ma, Shuang Li, Jinming Zhang, Chi Harold Liu, Jingxuan Kang, <b>Yulin Wang</b>, Gao Huang  <br>
+      <i>IEEE/CVF International Conference on Computer Vision (<b>ICCV</b>), 2023</i><br>
+   </li>
+</ul>
+<h3>2022</h3>
+<ul>
+   <li>
+      <a href='https://arxiv.org/pdf/2007.10538.pdf'>Regularizing Deep Networks with Semantic Data Augmentation</a><br>
+      <b>Yulin Wang</b>, Gao Huang, Shiji Song, Xuran Pan, Yitong Xia, Cheng Wu<br>
+      <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b><font color="red">TPAMI</font></b>, IF=23.6), 2022</i><br>
+      [<a href="https://github.com/blackfeather-wang/ISDA-for-Deep-Networks">Code</a>] [<a href="https://zhuanlan.zhihu.com/p/344953635">知乎</a>] [<a href="https://mp.weixin.qq.com/s/6pgrQ_UcfJK57hq9jFT17g">新智元</a>] [<a href="https://mp.weixin.qq.com/s/HzDbxsQpvlk-cDAVOd4qxQ">AI科技评论</a>] <br>
+   </li>
+   <li>
+      <a href='https://arxiv.org/pdf/2102.04906.pdf'>Dynamic Neural Networks: A Survey</a><br>
+      Yizeng Han, Gao Huang, Shiji Song, Le Yang, Honghui Wang, <b>Yulin Wang</b><br>
+      <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b><font color="red">TPAMI</font></b>, IF=23.6), 2022</i><br>
+      [<a href="https://mp.weixin.qq.com/s/TG_HBAR7Jrec4X02sxNGEA">智源社区</a>] [<a href="https://jmq.h5.xeknow.com/s/2H6ZSj">机器之心-在线讲座</a>] [<a href="https://www.bilibili.com/video/BV19B4y1A7Wy?from=search&seid=12254026542403915477">Bilibili</a>]<br>
+   </li>
+   <li>
+      <a href='https://arxiv.org/pdf/2007.02394.pdf'>Meta-Semi: A Meta-Learning Approach for Semi-Supervised Learning</a><br>
+      <b>Yulin Wang</b>, Jiayi Guo, Jiangshan Wang, Cheng Wu, Shiji Song, Gao Huang <br>
+      <i>CAAI Artificial Intelligence Research (sponsored by CAAI -- 中国人工智能学会主办), 2022</i><br>
+   </li>
+   <li>
+      <a href='https://arxiv.org/pdf/2209.13465.pdf'>AdaFocus V3: On Unified Spatial-temporal Dynamic Video Recognition</a><br>
+      <b>Yulin Wang</b>, Yang Yue, Xinhong Xu, Ali Hassani, Victor Kulikov, Nikita Orlov, Shiji Song, Humphrey Shi, Gao Huang<br>
+      <i>European Conference on Computer Vision (<b>ECCV</b>), 2022</i><br>
+   </li>
+   <li>
+      <a href='https://arxiv.org/pdf/2112.14238.pdf'>AdaFocus V2: End-to-End Training of Spatial Dynamic Networks for Video Recognition</a><br>
+      <b>Yulin Wang</b>, Yang Yue, Yuanze Lin, Haojun Jiang, Zihang Lai, Victor Kulikov, Nikita Orlov, Humphrey Shi, Gao Huang<br>
+      <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2022</i><br>
+      [<a href="https://github.com/LeapLabTHU/AdaFocusV2">Code</a>]<br>
+   </li>
+   <li>
+      <a href='https://arxiv.org/pdf/2208.01195.pdf'>Making the Best of Both Worlds: a Domain-Oriented Transformer for Unsupervised Domain Adaptation</a><br>
+      Wenxuan Ma, Jinming Zhang, Shuang Li, Chi Harold Liu, <b>Yulin Wang</b>, Wei Li<br>
+      <i>ACM International Conference on Multimedia (<b>ACM MM</b>), 2022</i><br>
+      [<a href="https://github.com/BIT-DA/Domain-Oriented-Transformer">Code</a>]<br>
+   </li>
+   
+</ul>
+<h3>2021</h3>
+<ul>
+   <li>
+      <a href='https://arxiv.org/pdf/2105.15075.pdf'>Not All Images are Worth 16x16 Words: Dynamic Transformers for Efficient Image Recognition</a><br>
+      <b>Yulin Wang</b>, Rui Huang, Shiji Song, Zeyi Huang, Gao Huang<br>
+      <i>Advances in Neural Information Processing Systems (<b>NeurIPS</b>), 2021</i><br>
+      [<a href="https://github.com/blackfeather-wang/Dynamic-Vision-Transformer">Code</a>] [<a href="https://zhuanlan.zhihu.com/p/377961269">知乎</a>] [<a href="https://mp.weixin.qq.com/s/1dXwhYWtj7i0XwCc05icQw">量子位</a>] [<a href="https://mp.weixin.qq.com/s/0PyclQ6K7CfM1Mmp1WTdGQ">AI科技评论</a>]<br>   
+   </li>
+   <li>
+      <a href='https://arxiv.org/pdf/2105.03245.pdf'>Adaptive Focus for Efficient Video Recognition</a><br>
+      <b>Yulin Wang</b>, Zhaoxi Chen, Haojun Jiang, Shiji Song, Yizeng Han, Gao Huang<br>
+      <i>IEEE/CVF International Conference on Computer Vision (<b>ICCV <font color="red">Oral</font></b>), 2021</i><br>
+      [<a href="https://github.com/blackfeather-wang/AdaFocus">Code</a>] [<a href="https://drive.google.com/file/d/1cJ1ezpQ0bXDq08ajNln94kTJFgspRaKv/view?usp=sharing">Poster</a>] [<a href="https://zhuanlan.zhihu.com/p/416704427">知乎</a>] [<a href="https://www.bilibili.com/video/BV1vb4y1a7sD/">Bilibili</a>]<br>
+   </li>
+   <li>
+      <a href='https://openreview.net/pdf?id=fAbkE6ant2'>Revisiting Locally Supervised Learning: an Alternative to End-to-end Training</a><br>
+      <b>Yulin Wang</b>, Zanlin Ni, Shiji Song, Le Yang, Gao Huang<br>
+      <i>International Conference on Learning Representations (<b>ICLR</b>), 2021</i><br>
+      [<a href="https://github.com/blackfeather-wang/InfoPro-Pytorch">Code</a>] [<a href="https://drive.google.com/file/d/1tk85yiNckZWH0MOa65rES_MsDO78RmVC/view?usp=sharing">Poster</a>] [<a href="https://zhuanlan.zhihu.com/p/344288699">知乎</a>]  [<a href="https://mp.weixin.qq.com/s/UzlgbBtH0TKvBiueMh4qxQ">PaperWeekly</a>] [<a href="https://www.bilibili.com/video/BV1KQ4y197L4?share_source=copy_web">Bilibili</a>]<br>
+   </li>
+   <li>
+      <a href='https://arxiv.org/pdf/2103.12562.pdf'>Transferable Semantic Augmentation for Domain Adaptation</a><br>
+      Shuang Li, Mixue Xie, Kaixiong Gong, Chi Harold Liu, <b>Yulin Wang</b>, Wei Li<br>
+      <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR <font color="red">Oral</font></b>), 2021</i><br>
+      [<a href="https://github.com/BIT-DA/TSA">Code</a>] <br>
+   </li>
+   <li>
+      <a href='https://arxiv.org/pdf/2103.12579.pdf'>MetaSAug: Meta Semantic Augmentation for Long-Tailed Visual Recognition</a><br>
+      Shuang Li, Kaixiong Gong, Chi Harold Liu, <b>Yulin Wang</b>, Feng Qiao, Xinjing Cheng<br>
+      <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2021</i><br>
+      [<a href="https://github.com/BIT-DA/MetaSAug">Code</a>] <br>
+   </li>
+   <li>
+      <a href='https://arxiv.org/pdf/2104.04382.pdf'>CondenseNet V2: Sparse Feature Reactivation for Deep Networks</a><br>
+      Le Yang, Haojun Jiang, Ruojin Cai, <b>Yulin Wang</b>, Shiji Song, Gao Huang, Qi Tian<br>
+      <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2021</i><br>
+      [<a href="https://github.com/jianghaojun/CondenseNetV2">Code</a>] <br>
+   </li>
+
+</ul>
+<h3>2020</h3>
+<ul>
+   <li>
+      <a href='https://drive.google.com/file/d/1Ys1xR4e8O579sspbgxS-Sj92ZI-wZ8tF/view'>Collaborative Learning with Corrupted Labels</a><br>
+      <b>Yulin Wang</b>, Rui Huang, Gao Huang, Shiji Song, Cheng Wu<br>
+      <i>Neural Networks (<b>NN</b>, IF=7.8), 2020</i><br>
+   </li>
+   <li>
+      <a href='https://arxiv.org/pdf/2010.05300.pdf'>Glance and Focus: a Dynamic Approach to Reducing Spatial Redundancy in Image Classification</a><br>
+      <b>Yulin Wang</b>, Kangchen Lv, Rui Huang, Shiji Song, Le Yang, Gao Huang<br>
+      <i>Advances in Neural Information Processing Systems (<b>NeurIPS</b>), 2020</i><br>
+      [<a href="https://github.com/blackfeather-wang/GFNet-Pytorch">Code</a>] [<a href="https://drive.google.com/file/d/19N9ermvLGwx_Nx3GtE989IAL_V42LivS/view?usp=sharing">Poster</a>] [<a href="https://zhuanlan.zhihu.com/p/266306870">知乎</a>] [<a href="https://mp.weixin.qq.com/s/zLa_y3t1IGrEN2763qUcPA">AI科技评论</a>]<br>   
+   </li>
+</ul>
+<h3>2019</h3>
+<ul>
+   <li>
+      <a href='https://www.tandfonline.com/doi/abs/10.1080/00207543.2018.1543967?journalCode=tprs20'>Logistics-aware Manufacturing Service Collaboration Optimisation towards Industrial Internet Platform</a><br>
+      <b>Yulin Wang</b>, Yongping Zhang, Fei Tao, Tingyu Chen, Ying Cheng, Shunkun Yang<br>
+      <i>International Journal of Production Research (<b>IJPR</b>, IF=9.2), 2019</i><br>
+   </li>
+   <li>
+      <a href='https://arxiv.org/pdf/1909.12220.pdf'>Implicit Semantic Data Augmentation for Deep Networks</a><br>
+      <b>Yulin Wang</b>, Xuran Pan, Shiji Song, Hong Zhang, Cheng Wu, Gao Huang<br>
+      <i>Advances in Neural Information Processing Systems (<b>NeurIPS</b>), 2019</i><br>
+      [<a href="https://github.com/blackfeather-wang/ISDA-for-Deep-Networks">Code</a>] [<a href="https://github.com/blackfeather-wang/ISDA-for-Deep-Networks/blob/master/Poster/NeurIPS%20poster%20v5.pdf">Poster</a>]<br>
+    </li>
+</ul>
+
+
+
+<h2>Selected Awards and Honors</h2>
+<ul>
+ <li><a href="https://ur.bytedance.com/scholarship">ByteDance Scholarship</a>, ByteDance Ltd., 2022 <br>
+   (字节跳动奖学金, <b><font color="red">10 PhD students in China</font></b>)</li>
+ <li><a href="https://www.msra.cn/zh-cn/news/features/2022-fellows">Microsoft Research Asia Fellowship Award</a>, Microsoft Research Asia, 2022 <br>
+   ("微软学者"奖学金, <b><font color="red">12 PhD students in the Asia-Pacific region</font></b>)</li>
+ <li>“Li Yanda” Scholarship (李衍达励学基金), Tsinghua University, 2022  <br>
+    (<b>4 PhD students in the Department of Automation, Tsinghua University</b>)</li>
+ <li><a href="https://mp.weixin.qq.com/s/1Qkc2mZ_MJ2hKNZZDT7RQA">Baidu Scholarship</a>, Baidu Inc., 2021  <br>
+   (百度奖学金, <b><font color="red">10 PhD students worldwide</font></b>)</li>
+ <li><a href="https://tc.ccf.org.cn/ccfcv/xgzy/timing/2021-05-04/697856.shtml">CCF-CV Outstanding Young Researcher Award</a>, China Computer Federation (CCF), 2021  <br>
+   (CCF-CV学术新锐奖, <b><font color="red">3 PhD or Master students in China</font></b>)</li>
+ <li>National Scholarship, Ministry of Education of China, 2021  <br>
+   (国家奖学金, <b><font color="red">Top 2% in Tsinghua University</font></b>)</li>
+    <li>Outstanding Oral Presentation, Doctoral Students Forum, Tsinghua University, 2021</li>
+    <li>Travel Award, NeurIPS, 2019</li>
+    <li>“Shen Yuan” Medal, Beihang University, 2018  <br>
+      (沈元奖章，<b><font color="red">Top 10 of 18,000+ undergraduate students in Beihang University</font></b>)</li>
+  <li>National Scholarship, Ministry of Education of China, 2018  <br>
+   (国家奖学金, <b>Top 2% in Beihang University</b>)</li>
+  <li>National Scholarship, Ministry of Education of China, 2017  <br>
+   (国家奖学金, <b>Top 2% in Beihang University</b>)</li>
+    <li>“Gong Xin” Innovation Scholarship, Ministry of Industry and Information Technology of China, 2017  <br>
+      (工信部创新奖学金, <b>Top 1/231 in Beihang University</b>)</li>
+    <li>First Prize in the "Zhou Peiyuan" Mechanics Competition for Undergraduate Students, 2017  <br>
+      (全国周培源大学生力学竞赛一等奖, <b>Top 0.3%</b>)</li>
+    <li>First Prize in National Undergraduate Mathematical Contest in Modeling, 2017  <br>
+      (高教社杯全国大学生数学建模竞赛一等奖, <b>Top 0.2%</b>)</li>
+    <li>Scholarship for Outstanding Academic Performance, Beihang University, 2016-2019  <br>
+      (<b>Top 5% in Beihang University</b>)</li>
+ </ul>
+
+
+
+<h2>Academic Service</h2>
+<table>
+<tbody><tr>
+<td style="width:20px">
+</td>
+<td valign="middle">
+  <div>
+  - Reviewer for TPAMI, IJCV, TCYB, TNNLS, TCSVT, Pattern Recognition, TMLR, ...<br><br><br>
+  - Reviewer for ICML, NeurIPS, ICLR, CVPR, ICCV, ECCV, AAAI, ...
+  <li>
+   <b><font color="red">Outstanding Reviewer</font></b>, CVPR, 2021
+   </li><br><br>
+  - Co-sponsor of the Special Interest Group on Dynamic Neural Networks, Beijing Academy of Artificial Intelligence (BAAI).<br>
+  <li>
+   <a href="https://littlepure2333.github.io/dynamic-neural-network">https://littlepure2333.github.io/dynamic-neural-network</a>
+   </li>
+   <li>
+      Core members include more than 20 researchers from 8 universities. We have organized more than 30 academic reports and tutorials. The cumulative audience has exceeded 1,000.
+      </li>
+  </ul>
+  </div>
+</td>
+</tr></tbody>
+</table>
 
-
-
-
-
-	<table>
-	  <tbody><tr>
-	  <td style="width:230px; height:110px" valign="middle" align='middle'>
-	    <img src="image/adafocusv3.png" width="250">
-	  </td>
-	  <td style="width:10px">
-	  </td>
-	  <td valign="middle">
-	    <div>
-	    	<b>AdaFocus V3: On Unified Spatial-temporal Dynamic Video Recognition</b><br>
-			<i>European Conference on Computer Vision (<b>ECCV</b>) 2022</i><br>
-			<b>Yulin Wang</b>, Yang Yue, Xinhong Xu, Ali Hassani, Victor Kulikov, Nikita Orlov, Shiji Song, Humphrey Shi, and Gao Huang<br>
-	    	[<a href="https://arxiv.org/pdf/2209.13465.pdf">PDF</a>]<br>
-			Motivated by that most existing works model the spatial and temporal redundancy separately, we further explore the unified formulation of spatial-temporal dynamic computation on top of AdaFocusV2.
-	    </div>
-	</tr></tbody>
-	</table><br><br>
-
-
-	<table>
-	  <tbody><tr>
-	  <td style="width:230px; height:110px" valign="middle" align='middle'>
-	    <img src="image/adafocusv2.png" width="250">
-	  </td>
-	  <td style="width:10px">
-	  </td>
-	  <td valign="middle">
-	    <div>
-	    	<b>AdaFocus V2: End-to-End Training of Spatial Dynamic Networks for Video Recognition</b><br>
-			<i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>) 2022</i><br>
-			<b>Yulin Wang</b>, Yang Yue, Yuanze Lin, Haojun Jiang, Zihang Lai, Victor Kulikov, Nikita Orlov, Humphrey Shi, and Gao Huang<br>
-	    	[<a href="https://arxiv.org/pdf/2112.14238.pdf">PDF</a>] [<a href="https://github.com/LeapLabTHU/AdaFocusV2">Code</a>]<br>
-			Compared to AdaFocus-V1: End-to-End trainable, much easier to implement, less than 50% training cost, but with significantly stronger performance.
-	    </div>
-	</tr></tbody>
-	</table><br><br>
-
-
-
-
-	<table>
-	  <td style="width:230px; height:110px" valign="middle" align='middle'>
-	    <img src="image/DVT.png" width="250">
-	  </td>
-	  <td style="width:10px">
-	  </td>
-	  <td valign="middle">
-	    <div>
-	    	<b>Not All Images are Worth 16x16 Words: Dynamic Transformers for Efficient Image Recognition</b><br>
-			<i>Advances in Neural Information Processing Systems (<b>NeurIPS</b>) 2021</i><br>
-	    	<b>Yulin Wang</b>, Rui Huang, Shiji Song, Zeyi Huang, and Gao Huang<br>
-	    	[<a href="https://arxiv.org/pdf/2105.15075.pdf">PDF</a>] [<a href="https://github.com/blackfeather-wang/Dynamic-Vision-Transformer">Code</a>] [<a href="https://zhuanlan.zhihu.com/p/377961269">知乎</a>] [<a href="https://mp.weixin.qq.com/s/1dXwhYWtj7i0XwCc05icQw">量子位</a>] [<a href="https://mp.weixin.qq.com/s/0PyclQ6K7CfM1Mmp1WTdGQ">AI科技评论</a>]<br>
-			We develop a Dynamic Vision Transformer (DVT) to automatically configure a proper number of tokens for each individual image, leading to a significant improvement in computational efficiency, both theoretically and empirically.
-		</div>
-	</tr></tbody>
-	</table><br><br>
-
-
-	<table>
-	  <tbody><tr>
-	  <td style="width:230px; height:110px" valign="middle" align='middle'>
-		  <!--<td style="width:252px; height:110px" valign="middle" align='middle'>-->
-	    <img src="image/adafocus.png" width="250">
-	  </td>
-	  <td style="width:10px">
-	  </td>
-	  <td valign="middle">
-	    <div>
-	    	<b>Adaptive Focus for Efficient Video Recognition</b><br>
-			<i>IEEE/CVF International Conference on Computer Vision (<b>ICCV <font color="red">Oral</font></b>) 2021</i><br>
-			<b>Yulin Wang</b>, Zhaoxi Chen, Haojun Jiang, Shiji Song, Yizeng Han, and Gao Huang<br>
-	    	[<a href="https://arxiv.org/pdf/2105.03245.pdf">PDF</a>] [<a href="https://github.com/blackfeather-wang/AdaFocus">Code</a>] [<a href="https://drive.google.com/file/d/1cJ1ezpQ0bXDq08ajNln94kTJFgspRaKv/view?usp=sharing">Poster</a>] [<a href="https://zhuanlan.zhihu.com/p/416704427">知乎</a>] [<a href="https://www.bilibili.com/video/BV1vb4y1a7sD/">Bilibili</a>]<br>
-			In this paper, we explore the spatial redundancy in video recognition with the aim to improve the computational efficiency. Extensive experiments on five benchmark datasets, i.e., ActivityNet, FCVID, Mini-Kinetics, Something-Something V1&V2, demonstrate that our method is significantly more efficient than the competitive baselines.
-	    </div>
-	</tr></tbody>
-	</table><br><br>
-
-
-		<table>
-	  <tbody><tr>
-	  <td style="width:230px; height:110px" valign="middle" align='middle'>
-	    <img src="image/isda_journal.png" width="250">
-	  </td>
-	  <td style="width:10px">
-	  </td>
-	  <td valign="middle">
-	    <div>
-	    	<b>Regularizing Deep Networks with Semantic Data Augmentation</b><br>
-			<i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b><font color="red">TPAMI</font></b>, IF=24.31), 2021</i><br>
-	    	<b>Yulin Wang</b>, Gao Huang, Shiji Song, Xuran Pan, Yitong Xia, and Cheng Wu<br>
-	    	[<a href="https://arxiv.org/pdf/2007.10538.pdf">PDF</a>] [<a href="https://github.com/blackfeather-wang/ISDA-for-Deep-Networks">Code</a>] [<a href="https://zhuanlan.zhihu.com/p/344953635">知乎</a>] [<a href="https://mp.weixin.qq.com/s/6pgrQ_UcfJK57hq9jFT17g">新智元</a>] [<a href="https://mp.weixin.qq.com/s/HzDbxsQpvlk-cDAVOd4qxQ">AI科技评论</a>]<br>
-			Journal version of ISDA. More ImageNet results. Visualizations on ImageNet. More results on semi-supervised learning, semantic segmentation and object detection.
-	    </div>
-	</tr></tbody>
-	</table><br><br>
-
-	<table>
-	  <td style="width:230px; height:110px" valign="middle" align='middle'>
-	    <img src="image/infopro.png" width="250">
-	  </td>
-	  <td style="width:10px">
-	  </td>
-	  <td valign="middle">
-	    <div>
-	    	<b>Revisiting Locally Supervised Learning: an Alternative to End-to-end Training</b><br>
-			<i>International Conference on Learning Representations (<b>ICLR</b>) 2021</i><br>
-	    	<b>Yulin Wang</b>, Zanlin Ni, Shiji Song, Le Yang, and Gao Huang<br>
-	    	[<a href="https://openreview.net/pdf?id=fAbkE6ant2">PDF</a>] [<a href="https://github.com/blackfeather-wang/InfoPro-Pytorch">Code</a>] [<a href="https://drive.google.com/file/d/1tk85yiNckZWH0MOa65rES_MsDO78RmVC/view?usp=sharing">Poster</a>] [<a href="https://zhuanlan.zhihu.com/p/344288699">知乎</a>]  [<a href="https://mp.weixin.qq.com/s/UzlgbBtH0TKvBiueMh4qxQ">PaperWeekly</a>] [<a href="https://www.bilibili.com/video/BV1KQ4y197L4?share_source=copy_web">Bilibili</a>]<br>
-			We provide a deep understanding of locally supervised learning, and make it perform on par with end-to-end training, while with significantly reduced GPUs memory footprint.
-		</div>
-	</tr></tbody>
-	</table><br><br>
-
-
-		<table>
-	  <tbody><tr>
-	  <td style="width:250px; height:110px" valign="middle" align='middle'>
-	    <img src="image/gf_nips.png" width="200">
-	  </td>
-	  <td style="width:10px">
-	  </td>
-	  <td valign="middle">
-	    <div>
-	    	<b>Glance and Focus: a Dynamic Approach to Reducing Spatial Redundancy in Image Classification</b><br>
-			<i>Advances in Neural Information Processing Systems (<b>NeurIPS</b>) 2020</i><br>
-	    	<b>Yulin Wang</b>, Kangchen Lv, Rui Huang, Shiji Song, Le Yang, and Gao Huang<br>
-	    	[<a href="https://arxiv.org/pdf/2010.05300.pdf">PDF</a>] [<a href="https://github.com/blackfeather-wang/GFNet-Pytorch">Code</a>] [<a href="https://drive.google.com/file/d/19N9ermvLGwx_Nx3GtE989IAL_V42LivS/view?usp=sharing">Poster</a>] [<a href="https://zhuanlan.zhihu.com/p/266306870">知乎</a>] [<a href="https://mp.weixin.qq.com/s/zLa_y3t1IGrEN2763qUcPA">AI科技评论</a>]<br>
-			We propose a general framework for inferring CNNs efficiently, which reduces the inference latency of MobileNets-V3 by 1.3x on an iPhone XS Max without sacrificing accuracy.
-	    </div>
-	</tr></tbody>
-	</table><br><br>
-
-
-
-	<table>
-	  <td style="width:230px; height:110px" valign="middle" align='middle'>
-	    <img src="image/isda.png" width="250">
-	  </td>
-	  <td style="width:10px">
-	  </td>
-	  <td valign="middle">
-	    <div>
-	    	<b>Implicit Semantic Data Augmentation for Deep Networks</b><br>
-			<i>Advances in Neural Information Processing Systems (<b>NeurIPS</b>) 2019</i><br>
-	    	<b>Yulin Wang</b>, Xuran Pan, Shiji Song, Hong Zhang, Cheng Wu, and Gao Huang<br>
-	    	[<a href="https://arxiv.org/pdf/1909.12220.pdf">PDF</a>] [<a href="https://github.com/blackfeather-wang/ISDA-for-Deep-Networks">Code</a>] [<a href="https://github.com/blackfeather-wang/ISDA-for-Deep-Networks/blob/master/Poster/NeurIPS%20poster%20v5.pdf">Poster</a>]<br>
-			We propose a novel implicit semantic data augmentation (ISDA) approach to complement traditional augmentation techniques like flipping or translation.
-		</div>
-	</tr></tbody>
-	</table><br><br>
-
-
-
-
-	<table>
-	  <td style="width:230px; height:110px" valign="middle" align='middle'>
-	    <img src="image/cl.png" width="250">
-	  </td>
-	  <td style="width:10px">
-	  </td>
-	  <td valign="middle">
-	    <div>
-	    	<b>Collaborative Learning with Corrupted Labels</b><br>
-			<i>Neural Networks (Q1, IF=9.66), 2019</i><br>
-	    	<b>Yulin Wang</b>, Rui Huang, Gao Huang, Shiji Song, and Cheng Wu<br>
-	    	[<a href="https://www.researchgate.net/profile/Yulin_Wang31/publication/339514417_Collaborative_learning_with_corrupted_labels/links/5e60f156a6fdccac3ceb5166/Collaborative-learning-with-corrupted-labels.pdf">PDF</a>]<br>
-			We propose a collaborative learning approach to improve the robustness and generalization performance of DNNs on datasets with corrupted labels.
-		</div>
-	</tr></tbody>
-	</table><br><br>
-
-
-
-
-
-	<table>
-	  <tbody><tr>
-	  <td style="width:230px; height:110px" valign="middle" align='middle'>
-	    <img src="image/survey.png" width="250">
-	  </td>
-	  <td style="width:10px">
-	  </td>
-	  <td valign="middle">
-	    <div>
-	    	<b>Dynamic Neural Networks: A Survey</b><br>
-			<i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b><font color="red">TPAMI</font></b>, IF=24.31), 2021</i><br>
-			Yizeng Han, Gao Huang, Shiji Song, Le Yang, Honghui Wang, and <b>Yulin Wang</b><br>
-	    	[<a href="https://arxiv.org/pdf/2102.04906.pdf">PDF</a>]
-			[<a href="https://mp.weixin.qq.com/s/TG_HBAR7Jrec4X02sxNGEA">智源社区</a>] [<a href="https://jmq.h5.xeknow.com/s/2H6ZSj">机器之心-在线讲座</a>] [<a href="https://www.bilibili.com/video/BV19B4y1A7Wy?from=search&seid=12254026542403915477">Bilibili</a>]<br>
-
-			Dynamic neural network is an emerging research topic in deep learning. Compared to static models which have fixed computational graphs and parameters at the inference stage, dynamic networks can adapt their structures or parameters to different inputs, leading to notable advantages in terms of accuracy, computational efficiency, adaptiveness, etc. In this survey, we comprehensively review this rapidly developing area.
-	    </div>
-	</tr></tbody>
-	</table><br><br>
-
-
-
-		<table>
-	  <tbody><tr>
-	  <td style="width:230px; height:110px" valign="middle" align='middle'>
-	    <img src="image/TSA.png" width="250">
-	  </td>
-	  <td style="width:10px">
-	  </td>
-	  <td valign="middle">
-	    <div>
-	    	<b>Transferable Semantic Augmentation for Domain Adaptation</b><br>
-			<i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR <font color="red">Oral</font></b>) 2021</i><br>
-			Shuang Li, Mixue Xie, Kaixiong Gong, Chi Harold Liu, <b>Yulin Wang</b>, and Wei Li<br>
-	    	[<a href="https://arxiv.org/pdf/2103.12562.pdf">PDF</a>] [<a href="https://github.com/BIT-DA/TSA">Code</a>] <br>
-			This paper extends the ISDA approach to the problem of domain adaptation, resulting in a simple but effective transferable semantic augmentation (TSA) algorithm. Extensive experiments on four benchmarks are conducted.
-			</div>
-	</tr></tbody>
-	</table><br><br>
-
-
-		<!--<table>-->
-	  <!--<tbody><tr>-->
-	  <!--<td style="width:230px; height:110px" valign="middle" align='middle'>-->
-	    <!--<img src="image/condensev2.png" width="250">-->
-	  <!--</td>-->
-	  <!--<td style="width:10px">-->
-	  <!--</td>-->
-	  <!--<td valign="middle">-->
-	    <!--<div>-->
-	    	<!--<b>CondenseNet V2: Sparse Feature Reactivation for Deep Networks</b><br>-->
-			<!--<i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>) 2021</i><br>-->
-			<!--Le Yang, Haojun Jiang, Ruojin Cai, <b>Yulin Wang</b>, Shiji Song, Gao Huang, and Qi Tian<br>-->
-	    	<!--[<a href="https://arxiv.org/pdf/2104.04382.pdf">PDF</a>] [<a href="https://github.com/jianghaojun/CondenseNetV2">Code</a>] <br>-->
-			<!--We propose a sparse feature reactivation approach on the basis of CondenseNet, aiming at actively increasing the utility of features that have become redundant. CondenseNetV2 achieves state-of-the-art performance on image classification and object detection in terms of both theoretical efficiency and practical speed.-->
-			<!--</div>-->
-	<!--</tr></tbody>-->
-	<!--</table><br><br>-->
-
-		<!--<table>-->
-	  <!--<tbody><tr>-->
-	  <!--<td style="width:230px; height:110px" valign="middle" align='middle'>-->
-	    <!--<img src="image/metasaug.png" width="250">-->
-	  <!--</td>-->
-	  <!--<td style="width:10px">-->
-	  <!--</td>-->
-	  <!--<td valign="middle">-->
-	    <!--<div>-->
-	    	<!--<b>MetaSAug: Meta Semantic Augmentation for Long-Tailed Visual Recognition</b><br>-->
-			<!--<i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>) 2021</i><br>-->
-			<!--Shuang Li, Kaixiong Gong, Chi Harold Liu, <b>Yulin Wang</b>, Feng Qiao, and Xinjing Cheng<br>-->
-	    	<!--[<a href="https://arxiv.org/pdf/2103.12579.pdf">PDF</a>] [<a href="https://github.com/BIT-DA/MetaSAug">Code</a>] <br>-->
-			<!--A meta-learning based ISDA algorithm for long-tailed problems. Results on CIFAR-LT-10/100, ImageNet-LT, and iNaturalist 2017/2018 are presented.-->
-	    <!--</div>-->
-	<!--</tr></tbody>-->
-	<!--</table><br><br>-->
-
-
-
-	<!--<table>-->
-	  <!--<tbody><tr>-->
-	  <!--<td style="width:230px; height:110px" valign="middle" align='middle'>-->
-	    <!--<img src="image/meta_semi.png" width="250">-->
-	  <!--</td>-->
-	  <!--<td style="width:10px">-->
-	  <!--</td>-->
-	  <!--<td valign="middle">-->
-	    <!--<div>-->
-	    	<!--<b>Meta-Semi: A Meta-learning Approach for Semi-supervised Learning</b><br>-->
-			<!--<i>arXiv Preprint</i><br>-->
-			<!--<b>Yulin Wang</b>, Jiayi Guo, Shiji Song, and Gao Huang<br>-->
-	    	<!--[<a href="https://arxiv.org/pdf/2007.02394.pdf">PDF</a>]<br>-->
-			<!--In real semi-supervised learning scenarios, the labeled data is scarce for extensive hyper-parameter search. To this end, we propose a novel meta-learning based algorithm that requires tuning only one additional hyper-parameter to achieve competitive performance under various conditions.-->
-	    <!--</div>-->
-	<!--</tr></tbody>-->
-	<!--</table><br><br>-->
-
-
-
-
-	<table>
-		<td style="width:20px">
-	  </td>
-	  <td valign="middle">
-	    <div>
-	    	<b>Currently, I have several papers under review as well. I wish that I will receive positive results. If you are interested in my research, please feel free to reach me.</b><br>
-
-		</div>
-	</tr></tbody>
-	</table>
-
-
-
-    <!-- <a name="talks"></a><br><br><br>
-    <h2>Invited Talks</h2><br>
-        <ul>
-            <li>2019.10,  SCSE, Beihang University, Semantic Data Augmentation</li>
-         	<li>2019.12,  School of Computer Sci. and Tech., Beijing Institute of Technology, Semantic Data Augmentation</li>
-         	<li>2020.03,  Doctoral Students Forum, Tsinghua University, Semantic Data Augmentation</li>
-         	<li>2020.06,  Huawei Technologies Ltd., Glance and Focus Networks</li>
-         	<li>2020.11,  Qingyuan Seminar, Glance and Focus Networks</li>
-         	<li>2021.02,  Qingyuan Seminar, Locally Supervised Deep Learning</li>
-         	<li>2021.03,  Huawei Technologies Ltd., Adaptive Focus for Video Recognition</li>
-         	<li>2021.03,  ByteDance Ltd., Semantic Data Augmentation</li>
-         	<li>2021.03,  SFFAI, Semantic Data Augmentation</li>
-			<li>2021.04,  Doctoral Students Forum, Tsinghua University, Locally Supervised Deep Learning</li>
-         	<li>2021.04,  Beijing Academy of Artificial Intelligence, Dynamic Image/Video Recognition </li>
-         	<li>2021.04,  TechBeat Community, Jiangmen Venture Capital, Locally Supervised Deep Learning </li>
-			<li>2021.04,  SFFAI, Locally Supervised Deep Learning</li>
-			<li>2021.06,  AI Time, Locally Supervised Deep Learning</li>
-			<li>2021.07,  SIA, Chinese Academy of Science, Efficient Deep Learning</li>
-			<li>2021.09,  Aibee (invited by Yuanqing Lin), Semantic Data Augmentation</li>
-			<li>2021.10,  School of Computer Science, Fudan University, Dynamic Deep Networks for Reducing Spatial Redundancy</li>
-			<li>2021.12,  The fourth Chinese Conference on Pattern Recognition and Computer Vision (PRCV 2021), Dynamic Deep Networks for Reducing Spatial Redundancy</li>
-         </ul> -->
-
-
-
-	<a name="service"></a><br><br><br>
-  <h2>Academic Service</h2><br>
-	  <table>
-	  <tbody><tr>
-	  <td style="width:20px">
-	  </td>
-	  <td style="width:30px">
-	  </td>
-	  <td valign="middle">
-	    <div>
-	    Reviewer for TPAMI, IJCV, TCYB, TNNLS, TCSVT, Pattern Recognition, TMLR, ...<br>
-			<br>
-		Reviewer for ICML, NeurIPS, ICLR, CVPR, ICCV, ECCV, ...<br>
-			<br>
-	    Program Committee Member for AAAI.<br>
-	    </ul>
-	    </div>
-	  </td>
-	  </tr></tbody>
-	  </table>
-
-
-	<a name="education"></a><br><br><br>
-  <h2>Education</h2><br>
-	  <table>
-	  <tbody><tr>
-	  <td style="width:20px">
-	  </td>
-	  <td style="width:30px">
-	  </td>
-	  <td valign="middle">
-	    <div>
-	    <b>Ph.D. in Pattern Recognition and Machine Learning, Tsinghua University, China.</b><br>
-	    2019.8 - Present
-	    </ul>
-	    </div>
-	  </td>
-	  </tr></tbody>
-	  </table><br>
-	  <table>
-	  <tbody><tr>
-	  <td style="width:20px">
-	  </td>
-	  <td style="width:30px">
-	  </td>
-	  <td valign="middle">
-	    <div>
-	    <b>B.Eng. in Automation, Beihang University, China.</b><br>
-		2015.8 - 2019.6 (GPA Top 1/231)
-	    </ul>
-	    </div>
-	  </td>
-	  </tr></tbody>
-	  </table>
-
-
-	<a name="experience"></a><br><br><br>
-  	<h2>Research Experience</h2><br>
-	  <table>
-	  <tbody><tr>
-	  <td style="width:20px">
-	  </td>
-	  <td style="width:30px">
-	  </td>
-	  <td valign="middle">
-	    <div>
-	    <b>Intern, Berkeley Deep Drive, University of California Berkeley, CA, USA.</b><br>
-	    2018.7 - 2018.8, advised by Dr. <a href="https://path.berkeley.edu/ching-yao-chan">Ching-Yao Chan</a>.
-	    </ul>
-	    </div>
-	  </td>
-	  </tr></tbody>
-	  </table><br>
-	  <table>
-	  <tbody><tr>
-	  <td style="width:20px">
-	  </td>
-	  <td style="width:30px">
-	  </td>
-	  <td valign="middle">
-	    <div>
-	    <b>Intern, Lab of Intelligent Manufacturing, Beihang University, China.</b><br>
-		2017.6 - 2018.6, advised by Prof. <a href="https://scholar.google.com/citations?user=-LQGKncAAAAJ&hl=zh-CN&oi=ao">Fei Tao</a>.
-	    </ul>
-	    </div>
-	  </td>
-	  </tr></tbody>
-	  </table>
-
-
-
-
-
-    <a name="honors"></a><br><br><br>
-    <h2>Selected Honors</h2><br>
-        <ul>
-			<li><a href="https://ur.bytedance.com/scholarship">ByteDance Scholarship</a>, ByteDance Ltd., 2022, (字节跳动奖学金, <b><font color="red">10</font> PhD students in China</b>)</li>
-			<li><a href="https://www.msra.cn/zh-cn/news/features/2022-fellows">Microsoft Research Asia Fellowship Award</a>, Microsoft Research Asia, 2022, ("微软学者"奖学金, <b><font color="red">12</font> PhD students in the Asia-Pacific region</b>)</li>
-			<li><a href="https://mp.weixin.qq.com/s/1Qkc2mZ_MJ2hKNZZDT7RQA">Baidu Scholarship</a>, Baidu Inc., 2021 (百度奖学金, <b><font color="red">10</font>  PhD students worldwide</b>)</li>
-			<li>National Scholarship, Ministry of Education of China, 2021 (<b>Top 2%</b> in Tsinghua University)</li>
-			<li>CCF-CV Outstanding Young Researcher Award, China Computer Federation (CCF), 2021 (CCF-CV学术新锐奖, <b><font color="red">3</font> PhD or Master students in China</b>)</li>
-			<li>Outstanding Reviewer, CVPR, 2021</li>
-            <li>Outstanding Oral Presentation, Doctoral Students Forum, Tsinghua University, 2021</li>
-            <li>Travel Award, NeurIPS, 2019</li>
-            <li>Shenyuan Medal, Beihang University, 2018 (<b>Top 10 in 18,000+ undergraduate students every year</b>)</li>
-	    	<li>National Scholarship, Ministry of Education of China, 2018 (<b>Top 2%</b>)</li>
-	    	<li>National Scholarship, Ministry of Education of China, 2017 (<b>Top 2%</b>)</li>
-            <li>Innovation Scholarship, Ministry of Industry and Information Technology of China, 2017 (<b>Top 1/231</b>)</li>
-            <li>First Prize in the "Zhou Peiyuan" Mechanics Competition for Undergraduate Students, 2017 (<b>Top 0.3%</b>)</li>
-            <li>First Prize in National Undergraduate Mathematical Contest in Modeling, 2017 (<b>Top 0.2%</b>)</li>
-            <li>Scholarship for Outstanding Academic Performance, Beihang University, 2016-2019 (<b>Top 5%</b>)</li>
-         </ul>
-
-<!--     <h2>Professional Activities</h2>
-        <ul>
-            <li><b>Reviewer</b>, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2018-.</li>
-            <li><b>Reviewer</b>, IEEE Transactions on Image Processing, 2017-.</li>
-            <li><b>Reviewer</b>, IEEE Transactions on Circuits and Systems for Video Technology, 2017-.</li>
-            <li><b>Reviewer</b>, IEEE Transactions on Information Forensics and Security, 2018-.</li>
-            <li><b>Reviewer</b>, IEEE Transactions on Biometrics, Behavior, and Identity Science, 2018-.</li>
-            <li><b>Reviewer</b>, IEEE Access, 2018-.</li>
-            <li><b>Reviewer</b>, Pattern Recognition, 2016-.</li>
-            <li><b>Reviewer</b>, Journal of Visual Communication and Image Representation, 2017-.</li>
-            <li><b>Reviewer</b>, International Journal of Machine Learning and Cybernetics, 2018-.</li>
-            <li><b>Reviewer</b>, Multimedia Systems, 2018-.</li>
-            <li><b>Reviewer</b>, IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2019.</li>
-            <li><b>Reviewer</b>, IEEE International Conference on Computer Vision, 2019.</li>
-            <li><b>Reviewer</b>, IEEE International Conference on Multimedia and Expo, 2018.</li>
-            <li><b>Reviewer</b>, IEEE International Conference on Image Processing, 2017-2018.</li>
-        </ul>   -->
-
-
-	<a name="contact"></a><br><br><br>
-	<h2>Contact</h2><br>
-	<table>
-    <tbody><tr>
-    <td style="width:15px">
-    </td>
-    <td valign="middle">
-      <div>
-      Email: wang-yl19@mails.tsinghua.edu.cn<p></p>
-      Address: Room 616, Central Main building, Tsinghua University, Beijing
-      </div>
-    </td>
-    </tr></tbody>
-    </table>
-
-</div>
-</div>
-<!--<br>-->
 
 <center>
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=500&t=tt&d=Skb__L3rRQTUS6LP2xGVpILlpIBy2ZE_lTYFxPjZvA0'></script>
+   <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=500&t=tt&d=Skb__L3rRQTUS6LP2xGVpILlpIBy2ZE_lTYFxPjZvA0'></script>
 </center>
+   
 
-<br>
-<br>
-<br>
-<center><font size=2 style="color: #BBBBBB">Source code from <a href="https://www.antao.site/">here</a>.</font></center><br>
+<div id="footer">
+	<div id="footer-text"></div>
+</div>
+Last update: 08/2023 by Yulin Wang.
 </body></html>
+
