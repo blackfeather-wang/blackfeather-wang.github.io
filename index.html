@@ -5,6 +5,20 @@
 	<link rel="stylesheet" href="./files/jemdoc.css" type="text/css">
 	<title>Yulin Wang (王语霖)</title>
    <link rel="icon" href="files/icon.jpg" >
+   <style>
+  .news-scroller{
+    max-height: 350px;          /* 需要更高/更低就调这里 */
+    overflow-y: auto;
+    padding: 10px 14px;
+    border: 0px solid #fff;  /* 红框 */
+    border-radius: 0px;
+    background: #fff;
+    -webkit-overflow-scrolling: touch; /* 移动端更顺滑 */
+   }
+   @media (max-width: 800px){
+      .news-scroller{ max-height: 260px; }
+   }
+   </style>
 </head>
 
 
@@ -19,13 +33,14 @@
 				<div id="toptitle">					
 					<h1>Yulin Wang (王语霖) &nbsp;</div>
 
-				<h3>Ph.D. Student</h3>  
+				<h3>Ph.D.</h3>  
 				<p>
 					Department of Automation, Tsinghua University<br>
 					<!-- Beijing, China, 100084<br> -->
 					<br>
-Email:  <a href="mailto:wang-yl19@mails.tsinghua.edu.cn">wang-yl19@mails.tsinghua.edu.cn</a>; <a href="mailto:yulin.bh@gmail.com">yulin.bh@gmail.com</a> <br>
-<a href="files/wyl_cv.pdf">[Curriculum Vitae (12/2024)]</a>  <br>
+Email:  <br> <a href="mailto:yulin-wang@tsinghua.edu.cn">yulin-wang@tsinghua.edu.cn</a> <br>  <a href="mailto:yulin.bh@gmail.com">yulin.bh@gmail.com</a> <br>
+<!-- <a href="files/wyl_cv.pdf">[Curriculum Vitae (12/2024)]</a>   -->
+<br>
 <a href="https://scholar.google.com/citations?user=gBP38gcAAAAJ&hl=en">[Google Scholar]</a>
 <a href="https://orcid.org/0000-0002-1363-0234">[ORCID]</a>
 <a href="https://www.semanticscholar.org/author/Yulin-Wang/39041697">[Semantic Scholar]</a>
@@ -41,36 +56,48 @@ Email:  <a href="mailto:wang-yl19@mails.tsinghua.edu.cn">wang-yl19@mails.tsinghu
 </table>
 <h2>Short Bio</h2>
 <p>
-	Yulin Wang is a Ph.D. student in the <a href="http://www.au.tsinghua.edu.cn/">Department of Automation</a> at <a href="https://www.tsinghua.edu.cn/en/index.htm">Tsinghua University</a>, advised by Prof. <a href="http://www.gaohuang.net/">Gao Huang</a> and Prof. <a href="https://www.tsinghua.edu.cn/info/1166/93894.htm">Cheng Wu</a>.
+	Yulin Wang received his Ph.D. degree in the <a href="http://www.au.tsinghua.edu.cn/">Department of Automation</a> at <a href="https://www.tsinghua.edu.cn/en/index.htm">Tsinghua University</a> in 2025, advised by Prof. <a href="http://www.gaohuang.net/">Gao Huang</a> and Prof. <a href="https://www.tsinghua.edu.cn/info/1166/93894.htm">Cheng Wu</a>.
 	Before that, he received his B.E. degree in <a href="http://dept3.buaa.edu.cn/">Automation</a> at <a href="https://www.buaa.edu.cn/">Beihang University</a> in 2019.
 	He was a research intern at <a href="https://deepdrive.berkeley.edu/">Berkeley DeepDrive, U.C. Berkeley</a>, in 2018. 
    <br>
    <br>
-   His research focuses on addressing the challenges of data efficiency and computational efficiency in building large-scale deep learning models (e.g., visual/multi-modal foundation models, generative models, and embodied foundation models for robotics).
+   His research focuses on addressing the challenges of computational efficiency and data efficiency in building large-scale AI foundation models (e.g., visual/multi-modal foundation models, generative models, and embodied foundation models for robotics). 
+   He is also interested in developing new AI-based methods for addressing challenging scientific problems (e.g., medicine and geophysics), especially from the perspective of vision-language foundation models.
    <br>
-   <br>
+   <!-- <br>
    <b><font color="red">He is actively looking for a postdoc position (expected to graduate in 2025.06)!</font></b>
-   <br>
+   <br> -->
    <br> 
 
 <h2>News</h2>
 
 <ul>
-   <li> 	[2024.12] <a href="https://arxiv.org/pdf/2412.11228">Uni-AdaFocus</a> is Accepted by <b><font color="red">TPAMI</font> (IF=20.8)</b>. Check it out on <a href="https://github.com/LeapLabTHU/Uni-AdaFocus">GitHub</a>.
+<div class="news-scroller">
+   <li> [2025.09] Our newest work on dynamic neural networks, <a href="">AdaptiveNN</a>, is Accepted by <b><font color="red">Nature Machine Intelligence</font> (5-year IF=31.8)</b>. [<a href="https://github.com/LeapLabTHU/AdaptiveNN">GitHub</a>] 
    </li>
-   <li> [2024.10] The <a href="https://link.springer.com/article/10.1007/s11263-024-02296-0">Journal Version of InfoPro</a> is Accepted by <b><font color="red">IJCV</font> (IF=11.6)</b>.
+   <li> [2025.09] Two Papers are Accepted by NeurIPS 2025 (with one <b><font color="red">spotlight</font></b>).
+   </li>
+   <li> [2025.07] <a href="https://www.nature.com/articles/s41467-025-62865-w">UltraBot</a> is Accepted by <b><font color="red">Nature Communications</font> (5-year IF=17.2)</b>. [<a href="https://www.nature.com/articles/s41467-025-62865-w#additional-information:~:text=First%20Demonstration%20of,with%20Plaque%20Video">Demo</a>] [<a href="https://github.com/LeapLabTHU/UltraBot">GitHub</a>] 
+   </li>
+   <li> [2025.06] Two Papers are Accepted by ICCV 2025.
+   </li>
+   <li> [2025.02] Four Papers are Accepted by CVPR 2025 (with one <b><font color="red">highlight</font></b>).
+   </li>
+   <li> 	[2024.12] <a href="https://arxiv.org/pdf/2412.11228">Uni-AdaFocus</a> is Accepted by <b><font color="red">TPAMI</font></b>. Check it out on <a href="https://github.com/LeapLabTHU/Uni-AdaFocus">GitHub</a>.
+   </li>
+   <li> [2024.10] The <a href="https://link.springer.com/article/10.1007/s11263-024-02296-0">Journal Version of InfoPro</a> is Accepted by <b><font color="red">IJCV</font></b>.
    </li>
    <li> [2024.09] Two Papers are Accepted by NeurIPS 2024.
    </li>
    <li> [2024.07] One Paper is Accepted by ECCV 2024.
    </li>
-   <li> 	[2024.05] <a href="https://arxiv.org/pdf/2405.08768">EfficientTrain++</a> is Accepted by <b><font color="red">TPAMI</font> (IF=20.8)</b>. Check it out on <a href="https://github.com/LeapLabTHU/EfficientTrain">GitHub</a>.
+   <li> 	[2024.05] <a href="https://arxiv.org/pdf/2405.08768">EfficientTrain++</a> is Accepted by <b><font color="red">TPAMI</font></b>. Check it out on <a href="https://github.com/LeapLabTHU/EfficientTrain">GitHub</a>.
    </li>
    <li> [2024.02] One Paper is Accepted by CVPR 2024.
    </li>
-   <li> 	[2024.02] One Paper on <a href="https://arxiv.org/pdf/2403.06726">Long-Tailed Visual Recognition</a> is Accepted by <b><font color="red">TPAMI</font> (IF=20.8)</b>.
+   <li> 	[2024.02] One Paper on <a href="https://arxiv.org/pdf/2403.06726">Long-Tailed Visual Recognition</a> is Accepted by <b><font color="red">TPAMI</font></b>.
    </li>
-   <li>	[2023.11] One Paper is Accepted by <b><font color="red">IJCV</font> (IF=11.6)</b>.
+   <li>	[2023.11] One Paper is Accepted by <b><font color="red">IJCV</font></b>.
    </li> 
       <li> [2023.10] Awarded the National Scholarship. <br>
          (国家奖学金, <b><font color="red">4th time</font></b>, <b>Top 2% in Tsinghua University</b>)
@@ -83,7 +110,7 @@ Email:  <a href="mailto:wang-yl19@mails.tsinghua.edu.cn">wang-yl19@mails.tsinghu
       <li> [2022.09] Winning the <a href="https://www.msra.cn/zh-cn/news/features/2022-fellows">2022 Microsoft Research Asia Fellowship Award</a>. <br>
          (“微软学者”奖学金, <b><font color="red">12 PhD students in the Asia-Pacific region</font></b>)
       </li>
-      <li> 	[2022.07] The <a href="https://arxiv.org/pdf/2201.03014.pdf">Journal Version of GFNet</a> is Accepted by <b><font color="red">TPAMI</font> (IF=20.8)</b>.
+      <li> 	[2022.07] The <a href="https://arxiv.org/pdf/2201.03014.pdf">Journal Version of GFNet</a> is Accepted by <b><font color="red">TPAMI</font></b>.
       </li>
       <li>	[2022.03 & 2022.07] <a href="https://arxiv.org/pdf/2112.14238.pdf">AdaFocusV2</a> & <a href="https://arxiv.org/pdf/2209.13465.pdf">AdaFocusV3</a> are Accepted by CVPR 2022 & ECCV 2022, respectively.
       </li>
@@ -98,7 +125,7 @@ Email:  <a href="mailto:wang-yl19@mails.tsinghua.edu.cn">wang-yl19@mails.tsinghu
       </li>
       <li> 	[2021.09] Not All Images are Worth 16x16 Words! Our <a href="https://arxiv.org/pdf/2105.15075.pdf">Dynamic ViT (DVT)</a> is Accepted by NeurIPS 2021.
       </li> 
-      <li>	[2021.09] Our <a href="https://arxiv.org/pdf/2102.04906.pdf">Survey on Dynamic Neural Networks</a> is Accepted by <b><font color="red">TPAMI</font> (IF=20.8)</b>.
+      <li>	[2021.09] Our <a href="https://arxiv.org/pdf/2102.04906.pdf">Survey on Dynamic Neural Networks</a> is Accepted by <b><font color="red">TPAMI</font></b>.
       </li> 
       <li>	[2021.07] <a href="https://arxiv.org/pdf/2105.03245.pdf">AdaFocus</a> is Accepted by ICCV 2021 for <b><font color="red">Oral</font> Presentation</b>.
       </li> 
@@ -106,7 +133,7 @@ Email:  <a href="mailto:wang-yl19@mails.tsinghua.edu.cn">wang-yl19@mails.tsinghu
       </li> 
       <li>	[2021.03] Three Papers are Accepted by CVPR 2021 (with one <b><font color="red">Oral</font></b>).
       </li> 
-      <li>	[2021.01] The <a href="https://arxiv.org/pdf/2007.10538.pdf">Journal Version of ISDA</a> is Accepted by <b><font color="red">TPAMI</font> (IF=20.8)</b>.
+      <li>	[2021.01] The <a href="https://arxiv.org/pdf/2007.10538.pdf">Journal Version of ISDA</a> is Accepted by <b><font color="red">TPAMI</font></b>.
       </li> 
       <li>	[2021.01] One Paper is Accepted by ICLR 2021.
       </li> 
@@ -114,30 +141,109 @@ Email:  <a href="mailto:wang-yl19@mails.tsinghua.edu.cn">wang-yl19@mails.tsinghu
 
 <h2>Publications</h2>
 
+
+<h3>2025</h3>
+<ul>
+   <li>
+      <a href=''>Emulating Human-like Adaptive Vision for Efficient and Flexible Machine Visual Perception</a><br>
+      <b>Yulin Wang</b>, Yang Yue (乐洋), Yang Yue (乐阳), Huanqian Wang, Haojun Jiang, Yizeng Han, Zanlin Ni, Yifan Pu, Minglei Shi, Rui Lu, Qisen Yang, Andrew Zhao, Zhuofan Xia, Shiji Song, Gao Huang <br>
+      <i><b><font color="red">Nature Machine Intelligence</font> (5-year IF=31.8)</b>, 2025</i><br>
+      [<a href="https://github.com/LeapLabTHU/AdaptiveNN">Code</a>]
+   </li>
+   <li>
+      <a href='https://www.nature.com/articles/s41467-025-62865-w'>Towards Expert-level Autonomous Carotid Ultrasonography with Large-scale Learning-based Robotic System</a><br>
+      Haojun Jiang, Andrew Zhao, Qian Yang, Xiangjie Yan, Teng Wang, <b>Yulin Wang</b>, Ning Jia, Jiangshan Wang, Guokun Wu, Yang Yue, Shaqi Luo, Huanqian Wang, Ling Ren, Siming Chen, Pan Liu, Guocai Yao, Wenming Yang, Shiji Song, Xiang Li, Kunlun He, Gao Huang <br>
+      <i><b><font color="red">Nature Communications</font> (5-year IF=17.2)</b>, 2025</i><br>
+      [<a href="https://github.com/LeapLabTHU/UltraBot">Code</a>] [<a href="https://www.nature.com/articles/s41467-025-62865-w#additional-information:~:text=First%20Demonstration%20of,with%20Plaque%20Video">Demo</a>] [<a href="https://drive.google.com/file/d/1_bU8kv8a9vbtQgA_lz8t_HZ_dmJhDUN9/view?usp=sharing">Poster</a>] [<a href="https://www.bilibili.com/video/BV1GoWGzKEQu/?vd_source=17f8133aaca9f7f8e61c08b61e26d162">HiT Webinar Talk</a>] [<a href="https://www.tsinghua.edu.cn/info/1175/121057.htm">清华新闻 Tsinghua News</a>] [<a href="https://mp.weixin.qq.com/s/YJqVwwHct0YfVJLwJC9GwA">清华自动化新闻 Tsinghua DA News</a>] <br>
+      [<a href="https://mp.weixin.qq.com/s/6EvXsRu4S6r53OsUY0rcSQ">北京智源报道 BAAI News</a>] [<a href="https://mp.weixin.qq.com/s/WqzrJ_DXyhiaQs5TVlaDEQ">医工学人报道 Medical & Engineering Innovators</a>] [<a href="https://mp.weixin.qq.com/s/SEsCNWsoPUPPZqOfBRf2QQ">CVer 报道</a>]
+   </li>
+   <li>
+      <a href='https://arxiv.org/abs/2408.15026'>UltraSeP: Sequence-aware Pre-training for Echocardiography Probe Movement Guidance</a><br>
+      Haojun Jiang, Teng Wang, Zhenguo Sun, <b>Yulin Wang</b>, Yang Yue, Yu Sun, Ning Jia, Meng Li, Shaqi Luo, Shiji Song, Gao Huang <br>
+      <i>Pattern Recognition (<b>PR</b>), 2025</i><br>
+   </li>
+   <li>
+      <a href='https://openaccess.thecvf.com/content/CVPR2025/papers/Yue_EchoWorld_Learning_Motion-Aware_World_Models_for_Echocardiography_Probe_Guidance_CVPR_2025_paper.pdf'>EchoWorld: Learning Motion-Aware World Models for Echocardiography Probe Guidance
+      </a><br>
+      Yang Yue*, <b>Yulin Wang*</b>, Haojun Jiang, Pan Liu, Shiji Song, Gao Huang  <br>
+      <font color="black"><i> [*co-first author, supervising Yang Yue (junior PhD student)]</i></font><br>
+      <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2025</i><br>
+      [<a href="https://github.com/LeapLabTHU/EchoWorld">Code</a>]
+   </li>
+   <li>
+      <a href='https://openaccess.thecvf.com/content/CVPR2025/papers/Yue_CheXWorld_Exploring_Image_World_Modeling_for_Radiograph_Representation_Learning_CVPR_2025_paper.pdf'>CheXWorld: Exploring Image World Modeling for Radiograph Representation Learning
+      </a><br>
+      Yang Yue*, <b>Yulin Wang*</b>, Chenxin Tao, Pan Liu, Shiji Song, Gao Huang  <br>
+      <font color="black"><i> [*co-first author, supervising Yang Yue (junior PhD student)]</i></font><br>
+      <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2025</i><br>
+      [<a href="https://github.com/LeapLabTHU/CheXWorld">Code</a>]
+   </li>
+   <li>
+      <a href='https://arxiv.org/pdf/2505.21375'>GeoLLaVA-8K: Scaling Remote-Sensing Multimodal Large Language Models to 8K Resolution</a><br>
+      Fengxiang Wang, Mingshuo Chen, Yueying Li, Di Wang, Haotian Wang, Zonghao Guo, Zefan Wang, Boqi Shan, Long Lan, <b>Yulin Wang†</b>, Hongzhen Wang†, Wenjing Yang†, Bo Du, Jing Zhang†  <br>
+      <font color="black"><i> [†corresponding authors]</i></font><br>
+      <i>Advances in Neural Information Processing Systems (<b>NeurIPS <font color="red">Spotlight</font></b>), 2025</i><br>
+      [<a href="https://github.com/MiliLab/GeoLLaVA-8K">Code</a>]
+   </li>
+   <li>
+      <a href='https://arxiv.org/pdf/2503.10392'>RoMA: Scaling up Mamba-based Foundation Models for Remote Sensing</a><br>
+      Fengxiang Wang*, <b>Yulin Wang*</b>, Di Wang, Haotian Wang, Mingshuo Chen, Hongzhen Wang, Haiyan Zhao, Yangang Sun, Shuo Wang, Long Lan, Wenjing Yang, Jing Zhang <br>
+      <font color="black"><i> [*co-first author]</i></font><br>
+      <i>Advances in Neural Information Processing Systems (<b>NeurIPS</b>), 2025</i><br>
+      [<a href="https://github.com/MiliLab/RoMA">Code</a>]
+   </li>
+   <li>
+      <a href='https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_XLRS-Bench_Could_Your_Multimodal_LLMs_Understand_Extremely_Large_Ultra-High-Resolution_Remote_CVPR_2025_paper.pdf'>XLRS-Bench: Could Your Multimodal LLMs Understand Extremely Large Ultra-High-Resolution Remote Sensing Imagery?
+      </a><br>
+      Fengxiang Wang, Hongzhen Wang, Zonghao Guo, Di Wang, <b>Yulin Wang</b>, Mingshuo Chen, Qiang Ma, Long Lan, Wenjing Yang, Jing Zhang, Zhiyuan Liu, Maosong Sun  <br>
+      <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR <font color="red">Highlight</font></b>), 2025</i><br>
+      [<a href="https://xlrs-bench.github.io/">Code</a>]
+   </li>
+   <li>
+      <a href='https://openaccess.thecvf.com/content/CVPR2025/papers/Guo_Everything_to_the_Synthetic_Diffusion-driven_Test-time_Adaptation_via_Synthetic-Domain_Alignment_CVPR_2025_paper.pdf'>Everything to the Synthetic: Diffusion-driven Test-time Adaptation via Synthetic-Domain Alignment
+      </a><br>
+      Jiayi Guo, Junhao Zhao, Chaoqun Du, <b>Yulin Wang</b>, Chunjiang Ge, Zanlin Ni, Shiji Song, Humphrey Shi, Gao Huang <br>
+      <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2025</i><br>
+      [<a href="https://github.com/SHI-Labs/Diffusion-Driven-Test-Time-Adaptation-via-Synthetic-Domain-Alignment">Code</a>]
+   </li>
+   <li>
+      <a href='https://arxiv.org/pdf/2509.26231'>IMG: Calibrating Diffusion Models via Implicit Multimodal Guidance</a><br>
+      Jiayi Guo, Chuanhao Yan, Xingqian Xu, <b>Yulin Wang</b>, Kai Wang, Gao Huang, Humphrey Shi  <br>
+      <i>IEEE/CVF International Conference on Computer Vision (<b>ICCV</b>), 2025</i><br>
+      [<a href="https://github.com/SHI-Labs/IMG-Multimodal-Diffusion-Alignment">Code</a>] <br>
+   </li>
+   <li>
+      <a href='https://arxiv.org/pdf/2503.12450'>LazyMAR: Accelerating Masked Autoregressive Models via Feature Caching</a><br>
+      Feihong Yan, Qingyan Wei, Jiayi Tang, Jiajun Li, <b>Yulin Wang</b>, Xuming Hu, Huiqi Li, Linfeng Zhang  <br>
+      <i>IEEE/CVF International Conference on Computer Vision (<b>ICCV</b>), 2025</i><br>
+      [<a href="https://github.com/feihongyan1/LazyMAR">Code</a>] <br>
+   </li>
+</ul>
+
 <h3>2024</h3>
 <ul>
    <li>
       <a href='https://arxiv.org/pdf/2412.11228'>Uni-AdaFocus: Spatial-temporal Dynamic Computation for Video Recognition</a><br>
       <b>Yulin Wang</b>, Haoji Zhang, Yang Yue, Shiji Song, Chao Deng, Junlan Feng, Gao Huang  <br>
-      <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b><font color="red">TPAMI</font></b>, IF=20.8), 2024</i><br>
-      [<a href="https://github.com/LeapLabTHU/Uni-AdaFocus">Code</a>]
+      <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b><font color="red">TPAMI</font></b>), 2024</i><br>
+      [<a href="https://github.com/LeapLabTHU/Uni-AdaFocus">Code</a>] [<a href="https://mp.weixin.qq.com/s/KzTwjGNhSdX9Lpk4MuG6TQ">机器之心</a>]
    </li>
    <li>
       <a href='https://arxiv.org/pdf/2405.08768'>EfficientTrain++: Generalized Curriculum Learning for Efficient Visual Backbone Training</a><br>
       <b>Yulin Wang</b>, Yang Yue, Rui Lu, Yizeng Han, Shiji Song, Gao Huang  <br>
-      <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b><font color="red">TPAMI</font></b>, IF=20.8), 2024</i><br>
+      <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b><font color="red">TPAMI</font></b>), 2024</i><br>
       [<a href="https://github.com/LeapLabTHU/EfficientTrain">Code</a>] [<a href="https://mp.weixin.qq.com/s/GsFXuNpZAF98bc7uMvOBCA">机器之心</a>]
    </li>
    <li>
       <a href='https://link.springer.com/article/10.1007/s11263-024-02296-0'>InfoPro: Locally Supervised Deep Learning by Maximizing Information Propagation</a><br>
       <b>Yulin Wang</b>, Zanlin Ni, Yifan Pu, Cai Zhou, Jixuan Ying, Shiji Song, Gao Huang  <br>
-      <i>International Journal of Computer Vision (<b><font color="red">IJCV</font></b>, IF=11.6), 2024</i><br>
+      <i>International Journal of Computer Vision (<b><font color="red">IJCV</font></b>), 2024</i><br>
       [<a href="https://github.com/blackfeather-wang/InfoPro-Pytorch">Code</a>] 
    </li>
       <li>
          <a href='https://arxiv.org/pdf/2403.06726'>Probabilistic Contrastive Learning for Long-Tailed Visual Recognition</a><br>
          Chaoqun Du, <b>Yulin Wang</b>, Shiji Song, Gao Huang  <br>
-			<i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b><font color="red">TPAMI</font></b>, IF=20.8), 2024</i><br>
+			<i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b><font color="red">TPAMI</font></b>), 2024</i><br>
          [<a href="https://github.com/LeapLabTHU/ProCo">Code</a>] [<a href="https://mp.weixin.qq.com/s/qjWdQRiax8NOOan-e1r0Ww">机器之心</a>]
    </li>
    <li>
@@ -184,24 +290,24 @@ Email:  <a href="mailto:wang-yl19@mails.tsinghua.edu.cn">wang-yl19@mails.tsinghu
          <a href='https://arxiv.org/pdf/2201.03014.pdf'>Glance and Focus Networks for Dynamic Visual Recognition</a><br>
          Gao Huang*, <b>Yulin Wang*</b>, Kangchen Lv, Haojun Jiang, Wenhui Huang, Pengfei Qi, Shiji Song  <br>
          <font color="red"><i> [<b>*co-first author</b> with my advisor]</i></font><br>
-			<i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b><font color="red">TPAMI</font></b>, IF=20.8), 2023</i><br>
+			<i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b><font color="red">TPAMI</font></b>), 2023</i><br>
          [<a href="https://github.com/blackfeather-wang/GFNet-Pytorch">Code</a>] [<a href="https://zhuanlan.zhihu.com/p/266306870">知乎 (on GFNet)</a>] <br>
    </li>
    <li>
       <a href='https://link.springer.com/article/10.1007/s11263-023-01944-1'>Adapting Across Domains via Target-Oriented Transferable Semantic Augmentation Under Prototype Constraint</a><br>
       Mixue Xie, Shuang Li, Kaixiong Gong, <b>Yulin Wang</b>, Gao Huang<br>
-      <i>International Journal of Computer Vision (<b><font color="red">IJCV</font></b>, IF=11.6), 2023</i><br>
+      <i>International Journal of Computer Vision (<b><font color="red">IJCV</font></b>), 2023</i><br>
       [<a href="https://github.com/BIT-DA/TTSA">Code</a>] 
    </li>
    <li>
       <a href='https://arxiv.org/pdf/2309.00399.pdf'>Fine-grained Recognition with Learnable Semantic Data Augmentation</a><br>
       Yifan Pu, Yizeng Han, <b>Yulin Wang</b>, Junlan Feng, Chao Deng, Gao Huang <br>
-      <i>IEEE Transactions on Image Processing (<b>TIP</b>, IF=10.8), 2023</i><br>
+      <i>IEEE Transactions on Image Processing (<b>TIP</b>), 2023</i><br>
    </li>
    <li>
       <a href='https://ieeexplore.ieee.org/document/10155270'>Dynamic Spatial Focus for Efficient Compressed Video Action Recognition</a><br>
       Ziwei Zheng, Le Yang, <b>Yulin Wang</b>, Miao Zhang, Lijun He, Gao Huang, Fan Li <br>
-      <i>IEEE Transactions on Circuits and Systems for Video Technology (<b>TCSVT</b>, IF=8.3), 2023</i><br>
+      <i>IEEE Transactions on Circuits and Systems for Video Technology (<b>TCSVT</b>), 2023</i><br>
    </li>
    <li>
       <a href='https://arxiv.org/pdf/2308.13998.pdf'>Computation-efficient Deep Learning for Computer Vision: A Survey</a><br>
@@ -245,13 +351,13 @@ Email:  <a href="mailto:wang-yl19@mails.tsinghua.edu.cn">wang-yl19@mails.tsinghu
    <li>
       <a href='https://arxiv.org/pdf/2007.10538.pdf'>Regularizing Deep Networks with Semantic Data Augmentation</a><br>
       <b>Yulin Wang</b>, Gao Huang, Shiji Song, Xuran Pan, Yitong Xia, Cheng Wu<br>
-      <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b><font color="red">TPAMI</font></b>, IF=20.8), 2022</i><br>
+      <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b><font color="red">TPAMI</font></b>), 2022</i><br>
       [<a href="https://github.com/blackfeather-wang/ISDA-for-Deep-Networks">Code</a>] [<a href="https://zhuanlan.zhihu.com/p/344953635">知乎</a>] [<a href="https://mp.weixin.qq.com/s/6pgrQ_UcfJK57hq9jFT17g">新智元</a>] [<a href="https://mp.weixin.qq.com/s/HzDbxsQpvlk-cDAVOd4qxQ">AI科技评论</a>] <br>
    </li>
    <li>
       <a href='https://arxiv.org/pdf/2102.04906.pdf'>Dynamic Neural Networks: A Survey</a><br>
       Yizeng Han, Gao Huang, Shiji Song, Le Yang, Honghui Wang, <b>Yulin Wang</b><br>
-      <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b><font color="red">TPAMI</font></b>, IF=20.8), 2022</i><br>
+      <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b><font color="red">TPAMI</font></b>), 2022</i><br>
       [<a href="https://mp.weixin.qq.com/s/TG_HBAR7Jrec4X02sxNGEA">智源社区</a>] [<a href="https://jmq.h5.xeknow.com/s/2H6ZSj">机器之心-在线讲座</a>] [<a href="https://www.bilibili.com/video/BV19B4y1A7Wy?from=search&seid=12254026542403915477">Bilibili</a>]<br>
    </li>
    <li>
@@ -323,7 +429,7 @@ Email:  <a href="mailto:wang-yl19@mails.tsinghua.edu.cn">wang-yl19@mails.tsinghu
    <li>
       <a href='https://drive.google.com/file/d/1Ys1xR4e8O579sspbgxS-Sj92ZI-wZ8tF/view'>Collaborative Learning with Corrupted Labels</a><br>
       <b>Yulin Wang</b>, Rui Huang, Gao Huang, Shiji Song, Cheng Wu<br>
-      <i>Neural Networks (<b>NN</b>, IF=6.0), 2020</i><br>
+      <i>Neural Networks (<b>NN</b>), 2020</i><br>
    </li>
    <li>
       <a href='https://arxiv.org/pdf/2010.05300.pdf'>Glance and Focus: A Dynamic Approach to Reducing Spatial Redundancy in Image Classification</a><br>
@@ -337,7 +443,7 @@ Email:  <a href="mailto:wang-yl19@mails.tsinghua.edu.cn">wang-yl19@mails.tsinghu
    <li>
       <a href='https://www.tandfonline.com/doi/abs/10.1080/00207543.2018.1543967?journalCode=tprs20'>Logistics-aware Manufacturing Service Collaboration Optimisation towards Industrial Internet Platform</a><br>
       <b>Yulin Wang</b>, Yongping Zhang, Fei Tao, Tingyu Chen, Ying Cheng, Shunkun Yang<br>
-      <i>International Journal of Production Research (<b>IJPR</b>, IF=7.0), 2019</i><br>
+      <i>International Journal of Production Research (<b>IJPR</b>), 2019</i><br>
    </li>
    <li>
       <a href='https://arxiv.org/pdf/1909.12220.pdf'>Implicit Semantic Data Augmentation for Deep Networks</a><br>
@@ -351,6 +457,8 @@ Email:  <a href="mailto:wang-yl19@mails.tsinghua.edu.cn">wang-yl19@mails.tsinghu
 
 <h2>Selected Awards and Honors</h2>
 <ul>
+   <li><a href="https://m.csig.org.cn/23/202411/52239.html">First Prize of Natural Science Award (3/5)</a>, China Society of Image and Graphics (CSIG), 2024  <br>
+      (<b><font color="red">中国图象图形学学会自然科学一等奖</font></b>)</li>
    <li>National Scholarship, Ministry of Education of China, 2023  <br>
       (国家奖学金, <b><font color="red">4th time</font></b>, <b>Top 2% in Tsinghua University</b>)</li>
  <li><a href="https://ur.bytedance.com/scholarship">ByteDance Scholarship</a>, ByteDance Ltd., 2022 <br>
@@ -396,14 +504,14 @@ Email:  <a href="mailto:wang-yl19@mails.tsinghua.edu.cn">wang-yl19@mails.tsinghu
   - Reviewer for ICML, NeurIPS, ICLR, CVPR, ICCV, ECCV, AAAI, ...
   <li>
    <b><font color="red">Outstanding Reviewer</font></b>, CVPR, 2021
-   </li><br><br>
-  - Co-sponsor of the Special Interest Group on Dynamic Neural Networks, Beijing Academy of Artificial Intelligence (BAAI).<br>
-  <li>
-   <a href="https://littlepure2333.github.io/dynamic-neural-network">https://littlepure2333.github.io/dynamic-neural-network</a>
    </li>
-   <li>
+  <!-- - Co-sponsor of the Special Interest Group on Dynamic Neural Networks, Beijing Academy of Artificial Intelligence (BAAI).<br> -->
+  <!-- <li>
+   <a href="https://littlepure2333.github.io/dynamic-neural-network">https://littlepure2333.github.io/dynamic-neural-network</a>
+   </li> -->
+   <!-- <li>
       Core members include more than 20 researchers from 8 universities. We have organized more than 30 academic reports and tutorials. The cumulative audience has exceeded 1,000.
-      </li>
+      </li> -->
   </ul>
   </div>
 </td>
@@ -420,6 +528,6 @@ Email:  <a href="mailto:wang-yl19@mails.tsinghua.edu.cn">wang-yl19@mails.tsinghu
 <div id="footer">
 	<div id="footer-text"></div>
 </div>
-Last update: 12/2024 by Yulin Wang.
+Last update: 10/2025 by Yulin Wang.
 </body></html>
 
